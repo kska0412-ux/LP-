@@ -204,6 +204,11 @@ img {
   margin-top: clamp(26px, 5vw, 42px);
 }
 
+.questions-visual {
+  margin-top: 0;
+  margin-bottom: clamp(42px, 7vw, 64px);
+}
+
 .main-message {
   width: min(100%, 680px);
   margin: 38px auto 0;
