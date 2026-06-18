@@ -200,6 +200,10 @@ img {
   object-position: left center;
 }
 
+.worry-visual {
+  margin-top: clamp(26px, 5vw, 42px);
+}
+
 .main-message {
   width: min(100%, 680px);
   margin: 38px auto 0;
