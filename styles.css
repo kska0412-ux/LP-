@@ -636,7 +636,7 @@ img {
 
 .lesson-content li:nth-child(5),
 .lesson-content li:nth-child(6) {
-  color: var(--gold);
+  color: var(--ink);
   font-weight: 600;
 }
 
