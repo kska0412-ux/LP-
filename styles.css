@@ -156,6 +156,41 @@ img {
   font-size: clamp(17px, 3.7vw, 24px);
 }
 
+.text-rose {
+  color: var(--rose-deep);
+  font-weight: 700;
+}
+
+.text-gold {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.marker {
+  display: inline;
+  padding: 0 0.08em 0.03em;
+  background: linear-gradient(transparent 58%, rgba(201, 124, 131, 0.24) 58%);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  font-weight: 700;
+}
+
+.marker.gold {
+  background: linear-gradient(transparent 58%, rgba(179, 137, 80, 0.24) 58%);
+  color: var(--gold);
+}
+
+.marker.rose {
+  color: var(--rose-deep);
+}
+
+.underline-key {
+  display: inline;
+  padding-bottom: 0.08em;
+  border-bottom: 1px solid rgba(179, 137, 80, 0.72);
+  font-weight: 700;
+}
+
 .ornament {
   width: min(72%, 420px);
   height: 28px;
@@ -219,6 +254,19 @@ img {
   font-size: clamp(23px, 5.3vw, 39px);
   font-weight: 600;
   line-height: 1.78;
+}
+
+.main-message .line {
+  margin: 0.03em 0;
+}
+
+.main-message .soft-emphasis {
+  color: var(--rose);
+}
+
+.main-message .emphasis {
+  color: var(--gold);
+  font-size: 1.08em;
 }
 
 .worries {
@@ -413,6 +461,12 @@ img {
   line-height: 1.45;
 }
 
+.result-list li:nth-child(2),
+.result-list li:nth-child(4) {
+  color: var(--gold);
+  background: rgba(255, 253, 251, 0.62);
+}
+
 .before-after {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -426,6 +480,11 @@ img {
   padding: clamp(22px, 5vw, 34px) 18px;
   border: 1px solid var(--gold-soft);
   background: rgba(255, 253, 251, 0.72);
+}
+
+.before-after .after-state {
+  border-color: rgba(201, 124, 131, 0.5);
+  background: linear-gradient(180deg, rgba(255, 253, 251, 0.88), rgba(247, 232, 231, 0.72));
 }
 
 .before-after span {
@@ -443,6 +502,10 @@ img {
   font-size: clamp(16px, 3.1vw, 21px);
   font-weight: 600;
   line-height: 1.6;
+}
+
+.before-after .after-state p {
+  color: var(--rose-deep);
 }
 
 .arrow {
@@ -580,6 +643,19 @@ img {
   line-height: 1.7;
 }
 
+.lesson-content li:nth-child(2),
+.lesson-content li:nth-child(3),
+.lesson-content li:nth-child(4) {
+  color: var(--rose-deep);
+  font-weight: 600;
+}
+
+.lesson-content li:nth-child(5),
+.lesson-content li:nth-child(6) {
+  color: var(--gold);
+  font-weight: 600;
+}
+
 .lesson-content li::before {
   content: "・";
   color: var(--rose);
@@ -602,6 +678,11 @@ img {
   background: rgba(255, 253, 251, 0.72);
 }
 
+.faq-list details[open] {
+  border-color: rgba(201, 124, 131, 0.46);
+  background: rgba(255, 253, 251, 0.86);
+}
+
 .faq-list summary {
   display: flex;
   align-items: center;
@@ -614,6 +695,10 @@ img {
   font-weight: 600;
   line-height: 1.55;
   list-style: none;
+}
+
+.faq-list details:nth-child(even) summary {
+  color: var(--gold);
 }
 
 .faq-list summary::-webkit-details-marker {
@@ -662,6 +747,10 @@ img {
   font-size: clamp(25px, 5.5vw, 44px);
   font-weight: 600;
   line-height: 1.45;
+}
+
+.cta-title span {
+  display: block;
 }
 
 .cta-lead {
@@ -793,7 +882,12 @@ img {
     min-height: 76px;
   }
 
+  .circle-grid {
+    grid-template-columns: repeat(2, minmax(0, 136px));
+  }
+
   .circle-card {
+    max-width: 136px;
     padding: 10px;
   }
 
