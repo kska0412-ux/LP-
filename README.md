@@ -1,9 +1,7 @@
-# kumi Actress Makeup LP
+# kumi 女優メイク体験レッスン LP
 
-添付参考画像のトンマナをもとに制作した、女優メイク講座の静的HTMLランディングページです。
+40代からの女優変身プロデューサー kumi の体験レッスン向けランディングページです。
 
-- `index.html`: LP本体
-- `assets/`: 参考画像とヒーロー用トリミング画像
-- `screenshots/`: 表示確認用スクリーンショット
-
-公開時は `index.html` を GitHub Pages で配信できます。
+- Static HTML/CSS
+- Responsive layout
+- Reference hero image kept unchanged

@@ -3,1468 +3,310 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>kumi 女優メイク講座 | マイナス10歳を叶える</title>
+    <title>kumi | 女優メイク体験レッスン</title>
     <meta
       name="description"
-      content="40代からの女優変身プロデューサー kumi が直接伝える、理想のあなたを叶える女優メイク講座。"
+      content="40代からの女優変身プロデューサーkumiによる、女優メイク体験レッスンのランディングページです。"
     >
-    <meta property="og:title" content="kumi 女優メイク講座">
-    <meta
-      property="og:description"
-      content="もっと自分を好きになれる。女優メイクで、マイナス10歳を叶える。"
-    >
+    <meta property="og:title" content="kumi | 女優メイク体験レッスン">
+    <meta property="og:description" content="女優メイクで、マイナス10歳を叶え、もっと輝き、憧れられる人生へ。">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/reference.jpg">
+    <meta property="og:image" content="./assets/hero-reference.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Serif+JP:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+JP:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     >
-    <style>
-      :root {
-        --base: #fbf6f3;
-        --base-deep: #f4ebe8;
-        --paper: #fffaf7;
-        --rose: #c87981;
-        --rose-deep: #a95562;
-        --rose-soft: #ead2d2;
-        --gold: #b68a45;
-        --gold-light: #ead8b7;
-        --ink: #423535;
-        --muted: #7a6866;
-        --sage: #75816f;
-        --line: rgba(182, 138, 69, 0.35);
-        --shadow: 0 20px 55px rgba(116, 76, 72, 0.14);
-        --serif: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
-        --display: "Cormorant Garamond", "Times New Roman", serif;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-        -webkit-text-size-adjust: 100%;
-      }
-
-      body {
-        margin: 0;
-        color: var(--ink);
-        background:
-          linear-gradient(90deg, rgba(182, 138, 69, 0.08) 1px, transparent 1px),
-          linear-gradient(180deg, #fffaf7 0%, var(--base) 46%, #f7eeee 100%);
-        background-size: 64px 64px, auto;
-        font-family: var(--serif);
-        line-height: 1.9;
-        letter-spacing: 0;
-        word-break: keep-all;
-        overflow-wrap: normal;
-      }
-
-      img {
-        display: block;
-        max-width: 100%;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      button,
-      input,
-      select,
-      textarea {
-        font: inherit;
-      }
-
-      .page {
-        position: relative;
-        overflow: hidden;
-      }
-
-      .section {
-        padding: 84px 24px;
-        position: relative;
-      }
-
-      .section:nth-of-type(even) {
-        background: rgba(255, 250, 247, 0.72);
-      }
-
-      .inner {
-        width: min(100%, 1080px);
-        margin: 0 auto;
-      }
-
-      .narrow {
-        width: min(100%, 880px);
-        margin: 0 auto;
-      }
-
-      .phrase {
-        display: inline;
-      }
-
-      .phrase::after {
-        content: "\200B";
-      }
-
-      .keep {
-        display: inline-block;
-      }
-
-      .section-label {
-        color: var(--rose-deep);
-        font-size: 15px;
-        font-weight: 600;
-        text-align: center;
-      }
-
-      .section-title {
-        margin: 10px auto 22px;
-        color: var(--gold);
-        font-size: 36px;
-        font-weight: 600;
-        line-height: 1.45;
-        text-align: center;
-      }
-
-      .section-lead {
-        margin: 0 auto 36px;
-        max-width: 720px;
-        color: var(--muted);
-        font-size: 17px;
-        text-align: center;
-      }
-
-      .brand {
-        display: flex;
-        align-items: center;
-        gap: 18px;
-      }
-
-      .brand-mark {
-        display: grid;
-        place-items: center;
-        width: 72px;
-        height: 72px;
-        border: 1px solid var(--gold);
-        border-radius: 50%;
-        color: var(--gold);
-        font-family: var(--display);
-        font-size: 45px;
-        line-height: 1;
-      }
-
-      .brand-name {
-        display: block;
-        color: var(--gold);
-        font-family: var(--display);
-        font-size: 44px;
-        font-weight: 600;
-        line-height: 1;
-      }
-
-      .brand-sub {
-        display: block;
-        margin-top: 6px;
-        color: var(--muted);
-        font-size: 15px;
-        line-height: 1.5;
-      }
-
-      .hero {
-        min-height: 100svh;
-        padding: 38px 28px 42px;
-        background:
-          linear-gradient(90deg, rgba(255, 250, 247, 0.96) 0%, rgba(255, 250, 247, 0.88) 42%, rgba(255, 250, 247, 0.08) 76%),
-          linear-gradient(180deg, rgba(255, 250, 247, 0) 68%, var(--base) 100%);
-      }
-
-      .hero-inner {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(320px, 430px);
-        align-items: center;
-        gap: 34px;
-        width: min(100%, 1130px);
-        margin: 0 auto;
-      }
-
-      .hero-copy {
-        position: relative;
-        z-index: 2;
-        padding: 18px 0 22px;
-      }
-
-      .hero-kicker {
-        display: inline-block;
-        margin: 74px 0 18px;
-        color: var(--rose-deep);
-        font-size: 26px;
-        font-weight: 500;
-        line-height: 1.6;
-      }
-
-      .ornament-line {
-        display: block;
-        width: min(100%, 430px);
-        height: 18px;
-        margin-top: 8px;
-        border-top: 1px solid var(--gold);
-        border-radius: 50%;
-        transform: skewX(-18deg);
-        opacity: 0.75;
-      }
-
-      .hero-title {
-        margin: 20px 0 22px;
-        color: var(--ink);
-        font-size: 62px;
-        font-weight: 600;
-        line-height: 1.45;
-      }
-
-      .hero-title .gold {
-        color: var(--gold);
-      }
-
-      .hero-title .age {
-        color: var(--gold);
-        font-family: var(--display);
-        font-size: 1.55em;
-        font-weight: 700;
-        line-height: 0.82;
-      }
-
-      .hero-sub {
-        margin: 16px 0 0;
-        padding: 18px 0 0;
-        border-top: 1px solid rgba(182, 138, 69, 0.28);
-        color: var(--rose-deep);
-        font-size: 26px;
-        font-weight: 600;
-      }
-
-      .hero-body {
-        margin: 26px 0 0;
-        max-width: 650px;
-        color: var(--ink);
-        font-size: 16px;
-      }
-
-      .hero-body p {
-        margin: 0 0 6px;
-      }
-
-      .hero-media {
-        position: relative;
-        align-self: stretch;
-        min-height: 720px;
-      }
-
-      .hero-photo {
-        width: 100%;
-        height: 100%;
-        min-height: 720px;
-        object-fit: cover;
-        object-position: center top;
-        box-shadow: var(--shadow);
-      }
-
-      .hero-media::after {
-        content: "";
-        position: absolute;
-        inset: auto 0 0;
-        height: 34%;
-        background: linear-gradient(180deg, rgba(251, 246, 243, 0), var(--base));
-        pointer-events: none;
-      }
-
-      .course-strip {
-        margin-top: 34px;
-        border: 1px solid rgba(182, 138, 69, 0.26);
-        background: rgba(255, 250, 247, 0.82);
-      }
-
-      .course-strip-head {
-        padding: 18px 22px;
-        background: var(--rose);
-        color: #fff;
-        font-size: 25px;
-        line-height: 1.55;
-        text-align: center;
-      }
-
-      .course-points {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 22px;
-        padding: 34px 28px 30px;
-      }
-
-      .point-circle {
-        display: grid;
-        align-content: center;
-        min-height: 220px;
-        padding: 24px;
-        border: 1px solid var(--line);
-        border-radius: 50%;
-        text-align: center;
-      }
-
-      .point-icon {
-        display: block;
-        margin-bottom: 10px;
-        color: var(--gold);
-        font-size: 34px;
-      }
-
-      .point-small {
-        color: var(--muted);
-        font-size: 15px;
-      }
-
-      .point-main {
-        color: var(--ink);
-        font-size: 24px;
-        line-height: 1.55;
-      }
-
-      .point-main strong {
-        color: var(--rose-deep);
-        font-weight: 600;
-      }
-
-      .course-strip-foot {
-        margin: 0;
-        padding: 0 24px 34px;
-        color: var(--ink);
-        font-size: 24px;
-        text-align: center;
-      }
-
-      .cta-row {
-        display: flex;
-        justify-content: center;
-        margin-top: 32px;
-      }
-
-      .cta {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 18px;
-        min-height: 74px;
-        padding: 14px 28px 14px 18px;
-        border-radius: 999px;
-        background: linear-gradient(90deg, var(--rose-deep), #ce858a);
-        color: #fff;
-        box-shadow: 0 16px 34px rgba(169, 85, 98, 0.24);
-        font-size: 25px;
-        font-weight: 700;
-        line-height: 1.3;
-        text-align: center;
-        transition: transform 180ms ease, box-shadow 180ms ease;
-      }
-
-      .cta:hover,
-      .cta:focus-visible {
-        transform: translateY(-2px);
-        box-shadow: 0 20px 42px rgba(169, 85, 98, 0.3);
-      }
-
-      .cta-badge {
-        display: grid;
-        place-items: center;
-        flex: 0 0 auto;
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-        background: #efe1b8;
-        color: var(--ink);
-        font-size: 15px;
-        font-weight: 600;
-        line-height: 1.55;
-      }
-
-      .cta-arrow {
-        font-size: 46px;
-        line-height: 1;
-      }
-
-      .ribbon {
-        margin: 0 auto 38px;
-        padding: 14px 18px;
-        width: min(100%, 680px);
-        background: var(--rose);
-        color: #fff;
-        font-size: 20px;
-        text-align: center;
-      }
-
-      .card-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 18px;
-      }
-
-      .card {
-        border: 1px solid rgba(182, 138, 69, 0.24);
-        border-radius: 8px;
-        background: rgba(255, 250, 247, 0.86);
-        box-shadow: 0 12px 28px rgba(116, 76, 72, 0.08);
-      }
-
-      .worry-card {
-        padding: 28px 24px;
-      }
-
-      .worry-number {
-        color: var(--gold);
-        font-family: var(--display);
-        font-size: 38px;
-        line-height: 1;
-      }
-
-      .worry-card h3 {
-        margin: 12px 0 10px;
-        color: var(--rose-deep);
-        font-size: 22px;
-        font-weight: 600;
-        line-height: 1.55;
-      }
-
-      .worry-card p,
-      .method-card p,
-      .proof-card p,
-      .change-card p,
-      .faq-item p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 15px;
-      }
-
-      .cause-layout {
-        display: grid;
-        grid-template-columns: minmax(0, 0.95fr) minmax(280px, 1.05fr);
-        align-items: center;
-        gap: 46px;
-      }
-
-      .cause-panel {
-        padding: 34px 32px;
-        border-top: 1px solid var(--line);
-        border-bottom: 1px solid var(--line);
-      }
-
-      .cause-panel h3 {
-        margin: 0 0 18px;
-        color: var(--gold);
-        font-size: 30px;
-        font-weight: 600;
-        line-height: 1.55;
-      }
-
-      .cause-panel p {
-        margin: 0 0 16px;
-        color: var(--muted);
-      }
-
-      .cause-list {
-        display: grid;
-        gap: 14px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      .cause-list li {
-        position: relative;
-        padding: 14px 18px 14px 42px;
-        border: 1px solid rgba(200, 121, 129, 0.25);
-        background: rgba(255, 255, 255, 0.48);
-        color: var(--ink);
-      }
-
-      .cause-list li::before {
-        content: "";
-        position: absolute;
-        top: 25px;
-        left: 18px;
-        width: 10px;
-        height: 10px;
-        border: 1px solid var(--gold);
-        border-radius: 50%;
-        background: var(--paper);
-      }
-
-      .method-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 16px;
-      }
-
-      .method-card {
-        min-height: 260px;
-        padding: 24px 22px;
-      }
-
-      .method-step {
-        color: var(--gold);
-        font-family: var(--display);
-        font-size: 34px;
-        line-height: 1;
-      }
-
-      .method-card h3 {
-        margin: 18px 0 12px;
-        color: var(--rose-deep);
-        font-size: 21px;
-        font-weight: 600;
-        line-height: 1.5;
-      }
-
-      .proof-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-      }
-
-      .proof-card {
-        padding: 24px;
-      }
-
-      .proof-before-after {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-        margin-bottom: 20px;
-      }
-
-      .face-chip {
-        display: grid;
-        place-items: center;
-        min-height: 112px;
-        border: 1px solid var(--line);
-        background: #fff;
-        color: var(--muted);
-        font-size: 14px;
-        text-align: center;
-      }
-
-      .face-chip.after {
-        background: #fff7f6;
-        color: var(--rose-deep);
-      }
-
-      .proof-card h3,
-      .change-card h3,
-      .trust-card h3,
-      .product-card h3 {
-        margin: 0 0 12px;
-        color: var(--ink);
-        font-size: 22px;
-        font-weight: 600;
-        line-height: 1.55;
-      }
-
-      .quote {
-        margin-top: 18px;
-        padding-top: 16px;
-        border-top: 1px solid rgba(182, 138, 69, 0.22);
-        color: var(--rose-deep);
-        font-size: 15px;
-      }
-
-      .change-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 18px;
-      }
-
-      .change-card {
-        padding: 28px 24px;
-        text-align: center;
-      }
-
-      .change-value {
-        color: var(--gold);
-        font-family: var(--display);
-        font-size: 56px;
-        font-weight: 700;
-        line-height: 1;
-      }
-
-      .change-unit {
-        color: var(--gold);
-        font-size: 18px;
-      }
-
-      .trust-layout {
-        display: grid;
-        grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
-        gap: 36px;
-        align-items: center;
-      }
-
-      .portrait-wrap {
-        position: relative;
-      }
-
-      .portrait-wrap img {
-        width: 100%;
-        max-height: 560px;
-        object-fit: cover;
-        object-position: center top;
-      }
-
-      .portrait-caption {
-        margin-top: 16px;
-        color: var(--muted);
-        font-size: 14px;
-        text-align: center;
-      }
-
-      .trust-card {
-        padding: 26px 24px;
-      }
-
-      .trust-list {
-        display: grid;
-        gap: 14px;
-        margin: 20px 0 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      .trust-list li {
-        padding: 14px 18px;
-        border-left: 2px solid var(--gold);
-        background: rgba(255, 255, 255, 0.48);
-      }
-
-      .product-layout {
-        display: grid;
-        grid-template-columns: 0.95fr 1.05fr;
-        gap: 26px;
-      }
-
-      .product-card {
-        padding: 28px 26px;
-      }
-
-      .product-list {
-        display: grid;
-        gap: 12px;
-        margin: 20px 0 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      .product-list li {
-        padding: 13px 0;
-        border-bottom: 1px solid rgba(182, 138, 69, 0.22);
-      }
-
-      .price-box {
-        display: grid;
-        gap: 18px;
-        align-content: center;
-        min-height: 100%;
-        padding: 34px 28px;
-        background: var(--rose);
-        color: #fff;
-        text-align: center;
-      }
-
-      .price-box .small {
-        font-size: 17px;
-      }
-
-      .price-main {
-        font-size: 34px;
-        font-weight: 700;
-        line-height: 1.5;
-      }
-
-      .price-note {
-        color: rgba(255, 255, 255, 0.9);
-        font-size: 14px;
-      }
-
-      .faq-list {
-        display: grid;
-        gap: 14px;
-      }
-
-      .faq-item {
-        padding: 24px 26px;
-      }
-
-      .faq-item h3 {
-        margin: 0 0 10px;
-        color: var(--rose-deep);
-        font-size: 18px;
-        font-weight: 600;
-      }
-
-      .apply {
-        background:
-          linear-gradient(180deg, rgba(255, 250, 247, 0.74), rgba(255, 250, 247, 0.96)),
-          var(--base-deep);
-      }
-
-      .apply-box {
-        display: grid;
-        grid-template-columns: 0.9fr 1.1fr;
-        gap: 30px;
-        align-items: start;
-      }
-
-      .apply-copy {
-        padding: 12px 0;
-      }
-
-      .apply-copy h2 {
-        margin: 0 0 18px;
-        color: var(--gold);
-        font-size: 38px;
-        font-weight: 600;
-        line-height: 1.5;
-      }
-
-      .apply-copy p {
-        margin: 0 0 18px;
-        color: var(--muted);
-      }
-
-      .form-card {
-        padding: 28px;
-      }
-
-      .form-grid {
-        display: grid;
-        gap: 16px;
-      }
-
-      label {
-        display: grid;
-        gap: 8px;
-        color: var(--ink);
-        font-size: 14px;
-        font-weight: 600;
-      }
-
-      input,
-      select,
-      textarea {
-        width: 100%;
-        min-height: 48px;
-        border: 1px solid rgba(182, 138, 69, 0.35);
-        border-radius: 8px;
-        background: #fff;
-        color: var(--ink);
-        padding: 10px 12px;
-      }
-
-      textarea {
-        min-height: 112px;
-        resize: vertical;
-      }
-
-      .submit {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        min-height: 60px;
-        border: 0;
-        border-radius: 999px;
-        background: var(--rose-deep);
-        color: #fff;
-        font-weight: 700;
-        cursor: pointer;
-      }
-
-      .form-note {
-        margin: 12px 0 0;
-        color: var(--muted);
-        font-size: 13px;
-        text-align: center;
-      }
-
-      .form-status {
-        min-height: 30px;
-        margin: 12px 0 0;
-        color: var(--rose-deep);
-        font-size: 14px;
-        text-align: center;
-      }
-
-      .footer {
-        padding: 36px 20px 110px;
-        background: var(--paper);
-        color: var(--muted);
-        font-size: 13px;
-        text-align: center;
-      }
-
-      .fixed-cta {
-        position: fixed;
-        right: 18px;
-        bottom: 18px;
-        z-index: 20;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 52px;
-        padding: 12px 20px;
-        border-radius: 999px;
-        background: var(--rose-deep);
-        color: #fff;
-        box-shadow: 0 12px 30px rgba(89, 49, 52, 0.22);
-        font-size: 15px;
-        font-weight: 700;
-      }
-
-      @media (max-width: 920px) {
-        .section {
-          padding: 72px 20px;
-        }
-
-        .hero {
-          position: relative;
-          min-height: auto;
-          padding: 28px 20px 54px;
-          overflow: hidden;
-          background:
-            linear-gradient(90deg, var(--base) 0%, rgba(251, 246, 243, 0.96) 42%, rgba(251, 246, 243, 0.54) 100%),
-            var(--base);
-        }
-
-        .hero-inner {
-          display: block;
-        }
-
-        .hero-copy {
-          position: relative;
-          z-index: 2;
-        }
-
-        .hero-media {
-          position: absolute;
-          top: 0;
-          right: -28px;
-          z-index: 1;
-          width: min(46%, 330px);
-          height: 650px;
-          min-height: 0;
-          margin: 0;
-          opacity: 0.82;
-          pointer-events: none;
-        }
-
-        .hero-photo {
-          position: absolute;
-          inset: 0;
-          min-height: 0;
-          height: 100%;
-          object-position: center 12%;
-        }
-
-        .hero-media::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          z-index: 1;
-          background: linear-gradient(90deg, var(--base) 0%, rgba(251, 246, 243, 0.72) 32%, rgba(251, 246, 243, 0) 68%);
-          pointer-events: none;
-        }
-
-        .hero-kicker {
-          margin-top: 46px;
-          font-size: 22px;
-        }
-
-        .hero-title {
-          font-size: 46px;
-        }
-
-        .hero-sub {
-          font-size: 22px;
-        }
-
-        .course-points,
-        .card-grid,
-        .method-grid,
-        .proof-grid,
-        .change-grid,
-        .cause-layout,
-        .trust-layout,
-        .product-layout,
-        .apply-box {
-          grid-template-columns: 1fr;
-        }
-
-        .course-points {
-          justify-items: center;
-        }
-
-        .point-circle {
-          width: min(100%, 260px);
-          min-height: 260px;
-        }
-
-        .method-card {
-          min-height: 0;
-        }
-
-        .product-layout {
-          gap: 0;
-        }
-      }
-
-      @media (max-width: 560px) {
-        body {
-          line-height: 1.85;
-        }
-
-        .section {
-          padding: 62px 18px;
-        }
-
-        .section-title {
-          font-size: 29px;
-        }
-
-        .section-lead {
-          font-size: 15px;
-          text-align: left;
-        }
-
-        .brand-mark {
-          width: 56px;
-          height: 56px;
-          font-size: 34px;
-        }
-
-        .brand-name {
-          font-size: 34px;
-        }
-
-        .brand-sub {
-          font-size: 13px;
-        }
-
-        .hero {
-          padding: 24px 18px 46px;
-        }
-
-        .hero-media {
-          right: -54px;
-          width: 66%;
-          height: 560px;
-          opacity: 0.66;
-        }
-
-        .hero-kicker {
-          margin: 38px 0 12px;
-          font-size: 19px;
-        }
-
-        .hero-title {
-          margin-top: 14px;
-          font-size: 38px;
-          line-height: 1.48;
-        }
-
-        .hero-sub {
-          font-size: 20px;
-        }
-
-        .hero-body {
-          font-size: 14px;
-        }
-
-        .course-strip-head {
-          font-size: 20px;
-        }
-
-        .course-points {
-          padding: 28px 18px;
-        }
-
-        .course-strip-foot {
-          font-size: 18px;
-        }
-
-        .cta {
-          width: 100%;
-          min-height: 68px;
-          gap: 12px;
-          padding: 12px 18px 12px 12px;
-          font-size: 18px;
-        }
-
-        .cta-badge {
-          width: 72px;
-          height: 72px;
-          font-size: 13px;
-        }
-
-        .cta-arrow {
-          font-size: 34px;
-        }
-
-        .ribbon {
-          font-size: 17px;
-        }
-
-        .cause-panel {
-          padding: 28px 0;
-        }
-
-        .cause-panel h3,
-        .apply-copy h2 {
-          font-size: 28px;
-        }
-
-        .change-value {
-          font-size: 48px;
-        }
-
-        .form-card {
-          padding: 22px 18px;
-        }
-
-        .fixed-cta {
-          right: 12px;
-          bottom: 12px;
-          left: 12px;
-          min-height: 52px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <div class="page">
-      <main>
-        <section class="hero" id="future" aria-labelledby="hero-title">
-          <div class="hero-inner">
-            <div class="hero-copy">
-              <div class="brand" aria-label="kumi">
-                <div class="brand-mark">k</div>
-                <div>
-                  <span class="brand-name">kumi</span>
-                  <span class="brand-sub">40代からの女優変身プロデューサー</span>
-                </div>
-              </div>
+    <main class="lp">
+      <section class="hero-image" aria-label="kumi 女優メイク メインビジュアル">
+        <img src="./assets/hero-reference.jpg" alt="kumi 女優メイクでマイナス10歳を叶えるメインビジュアル">
+      </section>
 
-              <div class="hero-kicker">
-                <span class="phrase">もっと自分を</span>
-                <span class="phrase">好きになれる</span>
-                <span class="ornament-line" aria-hidden="true"></span>
-              </div>
+      <section class="section future" id="future">
+        <div class="section-mark">
+          <span>Ideal Future</span>
+        </div>
+        <p class="eyebrow">理想の未来</p>
+        <h1 class="section-title">
+          <span class="line">40代からでも</span>
+          <span class="line">遅くない。</span>
+        </h1>
+        <div class="copy-flow lead-copy">
+          <span class="chunk">鏡を見るたびに</span><span class="chunk">ため息をつく毎日から卒業し、</span>
+          <span class="chunk">「最近キレイになったね」</span><span class="chunk">「何か変わった？」</span>
+          <span class="chunk">と言われる自分へ。</span>
+        </div>
+        <div class="ornament" aria-hidden="true"></div>
+        <div class="copy-flow">
+          <span class="chunk">年齢を重ねても</span><span class="chunk">女性として輝き続け、</span>
+          <span class="chunk">自分に自信を持ち、</span><span class="chunk">人前で笑顔になれる。</span>
+        </div>
+        <div class="main-message">
+          <span class="line">女優メイクで、</span>
+          <span class="line">マイナス10歳を叶え、</span>
+          <span class="line">もっと自分を好きになり、</span>
+          <span class="line">もっと輝き、</span>
+          <span class="line">憧れられる人生へ。</span>
+        </div>
+      </section>
 
-              <h1 class="hero-title" id="hero-title">
-                <span class="phrase"><span class="gold">女優メイク</span>で、</span><br>
-                <span class="phrase">マイナス<span class="age">10</span>歳を</span><br>
-                <span class="phrase"><span class="gold">叶える。</span></span>
-              </h1>
+      <section class="section worries" id="worries">
+        <div class="section-mark">
+          <span>Current Worries</span>
+        </div>
+        <p class="eyebrow">今の悩み</p>
+        <h2 class="section-title small">
+          <span class="line">こんなお悩みを</span>
+          <span class="line">抱えていませんか</span>
+        </h2>
+        <ul class="check-list">
+          <li><span class="check">✓</span><span><span class="chunk">昔より写真に写るのが</span><span class="chunk">嫌になった</span></span></li>
+          <li><span class="check">✓</span><span><span class="chunk">メイクが昔のままで</span><span class="chunk">何が正解かわからない</span></span></li>
+          <li><span class="check">✓</span><span><span class="chunk">シミ・シワ・たるみが</span><span class="chunk">気になる</span></span></li>
+          <li><span class="check">✓</span><span><span class="chunk">高い化粧品を買っても</span><span class="chunk">変われない</span></span></li>
+          <li><span class="check">✓</span><span><span class="chunk">YouTubeを見ても</span><span class="chunk">再現できない</span></span></li>
+          <li><span class="check">✓</span><span><span class="chunk">自分に似合うメイクが</span><span class="chunk">わからない</span></span></li>
+          <li><span class="check">✓</span><span><span class="chunk">女性としての自信を</span><span class="chunk">失いかけている</span></span></li>
+          <li><span class="check">✓</span><span><span class="chunk">もう年齢的に遅いと</span><span class="chunk">思っている</span></span></li>
+        </ul>
+      </section>
 
-              <p class="hero-sub">
-                <span class="phrase">もっと輝き、</span>
-                <span class="phrase">憧れられる人生へ</span>
-              </p>
+      <section class="section cause" id="cause">
+        <div class="section-mark">
+          <span>True Cause</span>
+        </div>
+        <p class="eyebrow">原因提示</p>
+        <div class="copy-flow">
+          <span class="chunk">実はあなたが変われないのは、</span>
+          <span class="chunk">年齢のせいでも、</span><span class="chunk">顔立ちのせいでもありません。</span>
+        </div>
+        <div class="cause-box">
+          <p>本当の原因は、</p>
+          <h2>
+            <span class="line">「今のあなたに合った</span>
+            <span class="line">メイクを知らないこと」</span>
+          </h2>
+        </div>
+        <div class="copy-flow">
+          <span class="chunk">多くの女性は、</span><span class="chunk">20代の頃のメイクを</span><span class="chunk">そのまま続けています。</span>
+          <span class="chunk">しかし年齢とともに、</span>
+        </div>
+        <div class="change-grid" aria-label="年齢とともに変化する要素">
+          <span>肌質</span>
+          <span>骨格</span>
+          <span>顔の印象</span>
+          <span>似合う色</span>
+        </div>
+        <div class="copy-flow">
+          <span class="chunk">だからこそ必要なのは、</span>
+          <span class="chunk">流行のメイクではなく、</span>
+        </div>
+        <p class="quote-line">
+          <span class="line">“今のあなたを</span>
+          <span class="line">最も美しく見せるメイク”</span>
+        </p>
+      </section>
 
-              <div class="hero-body">
-                <p><span class="phrase">外見に自信がなかった私が、</span></p>
-                <p><span class="phrase">メイクで心まで変われたからこそ</span><br><span class="phrase">伝えられることがあります。</span></p>
-                <p><span class="phrase">あなたの魅力を引き出し、</span><br><span class="phrase">人生を前向きに変えるお手伝いをします。</span></p>
-              </div>
-
-              <div class="course-strip" aria-label="講座の特徴">
-                <div class="course-strip-head">
-                  <span class="phrase">kumiが直接伝える</span><br>
-                  <span class="phrase">理想のあなたを叶える</span><br>
-                  <span class="phrase">女優メイク講座</span>
-                </div>
-                <div class="course-points">
-                  <div class="point-circle">
-                    <span class="point-small">10,000人のメイク経験</span>
-                    <span class="point-icon" aria-hidden="true">♕</span>
-                    <span class="point-main"><span class="phrase">自分に似合う</span><br><strong>女優メイクのプロ</strong></span>
-                  </div>
-                  <div class="point-circle">
-                    <span class="point-icon" aria-hidden="true">▣</span>
-                    <span class="point-main"><span class="phrase">TV・雑誌</span><br><span class="phrase">メディアにも</span><br><strong>多数出演</strong></span>
-                  </div>
-                  <div class="point-circle">
-                    <span class="point-icon" aria-hidden="true">♡</span>
-                    <span class="point-main"><span class="phrase">一人ひとりに</span><br><span class="phrase">寄り添う</span><br><strong>マンツーマン</strong></span>
-                  </div>
-                </div>
-                <p class="course-strip-foot">
-                  <span class="phrase">翌日から愛される女性として</span>
-                  <span class="phrase">人生をスタートさせましょう</span>
-                </p>
-              </div>
-
-              <div class="cta-row">
-                <a class="cta" href="#apply" aria-label="無料カウンセリングに申し込む">
-                  <span class="cta-badge">初回限定<br>特典あり</span>
-                  <span><span class="phrase">無料カウンセリングに</span><span class="phrase">申し込む</span></span>
-                  <span class="cta-arrow" aria-hidden="true">›</span>
-                </a>
-              </div>
-            </div>
-            <div class="hero-media" aria-hidden="true">
-              <img class="hero-photo" src="assets/hero-photo.jpg" alt="">
-            </div>
+      <section class="section method" id="method">
+        <div class="section-mark">
+          <span>Actress Makeup Method</span>
+        </div>
+        <p class="eyebrow">独自メソッド</p>
+        <h2 class="section-title">
+          <span class="line">kumiが</span>
+          <span class="line">10,000人以上の</span>
+          <span class="line">メイク経験から</span>
+          <span class="line">生み出した</span>
+        </h2>
+        <div class="method-name">
+          <span>女優メイクメソッド</span>
+        </div>
+        <div class="copy-flow">
+          <span class="chunk">女優のように、</span>
+          <span class="chunk">自分の魅力を最大限に引き出し、</span>
+          <span class="chunk">年齢を重ねるほど</span><span class="chunk">美しく見せる技術。</span>
+        </div>
+        <div class="circle-grid">
+          <div class="circle-card">
+            <span class="circle-no">01</span>
+            <p>誰でも再現できる</p>
           </div>
-        </section>
-
-        <section class="section" id="worry" aria-labelledby="worry-title">
-          <div class="inner">
-            <div class="ribbon">
-              <span class="phrase">今の悩み</span>
-            </div>
-            <p class="section-label">Before</p>
-            <h2 class="section-title" id="worry-title">
-              <span class="phrase">鏡を見るたび、</span>
-              <span class="phrase">小さく自信をなくしていませんか</span>
-            </h2>
-            <p class="section-lead">
-              <span class="phrase">年齢を重ねたからではなく、</span>
-              <span class="phrase">今のあなたに似合う見せ方を</span>
-              <span class="phrase">まだ知らないだけかもしれません。</span>
-            </p>
-            <div class="card-grid">
-              <article class="card worry-card">
-                <div class="worry-number">01</div>
-                <h3><span class="phrase">写真の自分に</span><span class="phrase">落ち込んでしまう</span></h3>
-                <p><span class="phrase">肌のくすみや顔色の暗さが気になり、</span><span class="phrase">人前に出ることまで慎重になる。</span></p>
-              </article>
-              <article class="card worry-card">
-                <div class="worry-number">02</div>
-                <h3><span class="phrase">昔のメイクが</span><span class="phrase">似合わなくなった</span></h3>
-                <p><span class="phrase">若い頃のやり方のままでは、</span><span class="phrase">なぜか疲れて見える日が増えている。</span></p>
-              </article>
-              <article class="card worry-card">
-                <div class="worry-number">03</div>
-                <h3><span class="phrase">何を選べばいいか</span><span class="phrase">分からない</span></h3>
-                <p><span class="phrase">情報が多すぎて、</span><span class="phrase">自分の顔に合う色や質感を決めきれない。</span></p>
-              </article>
-            </div>
+          <div class="circle-card">
+            <span class="circle-no">02</span>
+            <p>自分に似合うがわかる</p>
           </div>
-        </section>
+          <div class="circle-card">
+            <span class="circle-no">03</span>
+            <p>若作りではなく若見え</p>
+          </div>
+          <div class="circle-card">
+            <span class="circle-no">04</span>
+            <p>毎日続けられる</p>
+          </div>
+        </div>
+        <p class="closing-copy">
+          <span class="line">あなた専用の</span>
+          <span class="line">メイク理論をお伝えします。</span>
+        </p>
+      </section>
 
-        <section class="section" id="cause" aria-labelledby="cause-title">
-          <div class="inner cause-layout">
-            <div class="cause-panel">
-              <p class="section-label">Cause</p>
-              <h2 class="section-title" id="cause-title">
-                <span class="phrase">原因は、</span>
-                <span class="phrase">年齢ではありません</span>
-              </h2>
-              <p>
-                <span class="phrase">大人の顔立ちは、</span>
-                <span class="phrase">影・色・質感の重なりで</span>
-                <span class="phrase">印象が大きく変わります。</span>
-              </p>
-              <p>
-                <span class="phrase">必要なのは足し算ではなく、</span>
-                <span class="phrase">品よく輝きが戻る</span>
-                <span class="phrase">引き出し方です。</span>
-              </p>
-            </div>
-            <ul class="cause-list" aria-label="原因">
-              <li><span class="phrase">肌の光を消すファンデーション選び</span></li>
-              <li><span class="phrase">目元の影を濃く見せるアイメイク</span></li>
-              <li><span class="phrase">血色を遠ざけるリップとチーク</span></li>
-              <li><span class="phrase">輪郭をぼかす眉とハイライト位置</span></li>
+      <section class="section proof" id="proof">
+        <div class="section-mark">
+          <span>Transformation Proof</span>
+        </div>
+        <p class="eyebrow">変身証拠</p>
+        <h2 class="section-title small">
+          <span class="line">受講生の多くが</span>
+          <span class="line">変化を実感しています</span>
+        </h2>
+        <ul class="result-list">
+          <li>老け見え解消</li>
+          <li>マイナス5歳〜10歳印象</li>
+          <li>自信のある表情</li>
+          <li>垢抜けた印象</li>
+        </ul>
+        <div class="before-after">
+          <div>
+            <span>Before</span>
+            <p>「自分に自信が持てない」</p>
+          </div>
+          <div class="arrow" aria-hidden="true">↓</div>
+          <div>
+            <span>After</span>
+            <p>「鏡を見るのが楽しくなった」</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section voices" id="voices">
+        <div class="section-mark">
+          <span>Student Voices</span>
+        </div>
+        <p class="eyebrow">人生変化の証拠</p>
+        <h2 class="section-title small">
+          <span class="line">受講生から届いた声</span>
+        </h2>
+        <div class="voice-list">
+          <blockquote><span class="chunk">「久しぶりに友人から</span><span class="chunk">褒められました」</span></blockquote>
+          <blockquote><span class="chunk">「夫に綺麗になったと</span><span class="chunk">言われました」</span></blockquote>
+          <blockquote><span class="chunk">「外出するのが</span><span class="chunk">楽しくなりました」</span></blockquote>
+          <blockquote><span class="chunk">「人前に出る仕事に</span><span class="chunk">挑戦できました」</span></blockquote>
+          <blockquote><span class="chunk">「恋愛をもう一度</span><span class="chunk">楽しめるようになりました」</span></blockquote>
+        </div>
+        <div class="copy-flow">
+          <span class="chunk">変わったのは</span><span class="chunk">メイクだけではありません。</span>
+          <span class="chunk">自信が変わり、</span><span class="chunk">表情が変わり、</span><span class="chunk">人生が変わったのです。</span>
+        </div>
+      </section>
+
+      <section class="section instructor" id="instructor">
+        <div class="section-mark">
+          <span>Profile</span>
+        </div>
+        <p class="eyebrow">講師信頼</p>
+        <div class="profile-panel">
+          <div class="logo-mark" aria-hidden="true">k</div>
+          <div>
+            <h2>kumi</h2>
+            <p class="role">40代からの女優変身プロデューサー</p>
+          </div>
+        </div>
+        <div class="copy-flow">
+          <span class="chunk">これまで10,000人以上の</span><span class="chunk">メイクを担当。</span>
+          <span class="chunk">年齢による悩みを抱える女性が、</span>
+          <span class="chunk">本来の魅力を取り戻し、</span>
+          <span class="chunk">自信を持って人生を楽しめるよう</span><span class="chunk">サポート。</span>
+          <span class="chunk">「もっと早く出会いたかった」</span>
+          <span class="chunk">と言われるレッスンを</span><span class="chunk">提供しています。</span>
+        </div>
+      </section>
+
+      <section class="section lesson" id="lesson">
+        <div class="section-mark">
+          <span>Trial Lesson</span>
+        </div>
+        <p class="eyebrow">商品説明</p>
+        <h2 class="section-title">
+          <span class="line">女優メイク</span>
+          <span class="line">体験レッスン</span>
+        </h2>
+        <div class="lesson-ribbon">所要時間：約90分</div>
+        <div class="lesson-content">
+          <div>
+            <h3>内容</h3>
+            <ul>
+              <li>顔分析</li>
+              <li>似合うメイク診断</li>
+              <li>若見えポイント解説</li>
+              <li>眉デザイン</li>
+              <li>アイメイク指導</li>
+              <li>チーク・リップ指導</li>
+              <li>実践レッスン</li>
             </ul>
           </div>
-        </section>
-
-        <section class="section" id="method" aria-labelledby="method-title">
-          <div class="inner">
-            <p class="section-label">Actress Glow Method</p>
-            <h2 class="section-title" id="method-title">
-              <span class="phrase">kumi独自の女優メイクで、</span>
-              <span class="phrase">眠っていた魅力を目覚めさせる</span>
-            </h2>
-            <p class="section-lead">
-              <span class="phrase">ただ若く見せるメイクではなく、</span>
-              <span class="phrase">あなたらしい品・華やぎ・余裕を</span>
-              <span class="phrase">一つずつ整えるメソッドです。</span>
-            </p>
-            <div class="method-grid">
-              <article class="card method-card">
-                <div class="method-step">01</div>
-                <h3><span class="phrase">骨格と表情の</span><span class="phrase">魅力診断</span></h3>
-                <p><span class="phrase">顔立ち、雰囲気、なりたい印象を見ながら、</span><span class="phrase">似合う方向性を定めます。</span></p>
-              </article>
-              <article class="card method-card">
-                <div class="method-step">02</div>
-                <h3><span class="phrase">光を仕込む</span><span class="phrase">ベース作り</span></h3>
-                <p><span class="phrase">厚塗りせず、</span><span class="phrase">肌そのものが明るく見える質感へ整えます。</span></p>
-              </article>
-              <article class="card method-card">
-                <div class="method-step">03</div>
-                <h3><span class="phrase">目元と眉の</span><span class="phrase">印象設計</span></h3>
-                <p><span class="phrase">やさしさと華やかさが伝わるように、</span><span class="phrase">線と影を繊細に調整します。</span></p>
-              </article>
-              <article class="card method-card">
-                <div class="method-step">04</div>
-                <h3><span class="phrase">日常で続く</span><span class="phrase">再現レッスン</span></h3>
-                <p><span class="phrase">翌朝から自分で再現できるように、</span><span class="phrase">道具選びから手順まで伴走します。</span></p>
-              </article>
-            </div>
+          <div>
+            <h3>対象</h3>
+            <p>40代〜60代女性</p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section" id="proof" aria-labelledby="proof-title">
-          <div class="inner">
-            <p class="section-label">Transformation</p>
-            <h2 class="section-title" id="proof-title">
-              <span class="phrase">変身の証拠は、</span>
-              <span class="phrase">表情の明るさに表れます</span>
-            </h2>
-            <div class="proof-grid">
-              <article class="card proof-card">
-                <div class="proof-before-after" aria-hidden="true">
-                  <div class="face-chip">Before<br>くすみ・影</div>
-                  <div class="face-chip after">After<br>透明感・血色</div>
-                </div>
-                <h3><span class="phrase">肌が明るく見え、</span><span class="phrase">笑顔が自然に</span></h3>
-                <p><span class="phrase">肌色に合う下地とチークで、</span><span class="phrase">内側から満ちるような印象へ。</span></p>
-                <div class="quote">「鏡を見る時間が楽しみになりました」</div>
-              </article>
-              <article class="card proof-card">
-                <div class="proof-before-after" aria-hidden="true">
-                  <div class="face-chip">Before<br>ぼんやり</div>
-                  <div class="face-chip after">After<br>凛と華やか</div>
-                </div>
-                <h3><span class="phrase">目元に品が宿り、</span><span class="phrase">写真映えも変化</span></h3>
-                <p><span class="phrase">濃くするのではなく、</span><span class="phrase">視線が集まるポイントを丁寧に整えます。</span></p>
-                <div class="quote">「家族から雰囲気が柔らかくなったと言われました」</div>
-              </article>
-              <article class="card proof-card">
-                <div class="proof-before-after" aria-hidden="true">
-                  <div class="face-chip">Before<br>無難</div>
-                  <div class="face-chip after">After<br>女優感</div>
-                </div>
-                <h3><span class="phrase">自分らしい華やぎが</span><span class="phrase">戻ってくる</span></h3>
-                <p><span class="phrase">特別な日だけでなく、</span><span class="phrase">普段の装いにもなじむ上品な印象へ。</span></p>
-                <div class="quote">「久しぶりに新しい服を選びたくなりました」</div>
-              </article>
-            </div>
-          </div>
-        </section>
+      <section class="section faq" id="faq">
+        <div class="section-mark">
+          <span>Questions</span>
+        </div>
+        <p class="eyebrow">不安解消</p>
+        <h2 class="section-title small">
+          <span class="line">安心してお越しください</span>
+        </h2>
+        <div class="faq-list">
+          <details open>
+            <summary>Q. メイクが苦手でも大丈夫ですか？</summary>
+            <p><span class="chunk">もちろん大丈夫です。</span><span class="chunk">初心者の方でもわかるよう</span><span class="chunk">丁寧にお伝えします。</span></p>
+          </details>
+          <details>
+            <summary>Q. 年齢が高くても参加できますか？</summary>
+            <p><span class="chunk">はい。</span><span class="chunk">40代・50代・60代の方も</span><span class="chunk">多数参加されています。</span></p>
+          </details>
+          <details>
+            <summary>Q. 化粧品を買わされませんか？</summary>
+            <p><span class="chunk">無理な販売は</span><span class="chunk">一切ありません。</span></p>
+          </details>
+          <details>
+            <summary>Q. 不器用でもできますか？</summary>
+            <p><span class="chunk">誰でも再現できる方法を</span><span class="chunk">お伝えしています。</span></p>
+          </details>
+        </div>
+      </section>
 
-        <section class="section" id="life-change" aria-labelledby="life-change-title">
-          <div class="inner">
-            <p class="section-label">Life Change</p>
-            <h2 class="section-title" id="life-change-title">
-              <span class="phrase">メイクが変わると、</span>
-              <span class="phrase">人生の選択まで変わり始めます</span>
-            </h2>
-            <div class="change-grid">
-              <article class="card change-card">
-                <div><span class="change-value">92</span><span class="change-unit">%</span></div>
-                <h3><span class="phrase">外出が前向きに</span></h3>
-                <p><span class="phrase">人に会う予定を、</span><span class="phrase">楽しみに感じられるように。</span></p>
-              </article>
-              <article class="card change-card">
-                <div><span class="change-value">10,000</span><span class="change-unit">人</span></div>
-                <h3><span class="phrase">メイク経験</span></h3>
-                <p><span class="phrase">一人ひとりの悩みと顔立ちに向き合った</span><span class="phrase">実践経験があります。</span></p>
-              </article>
-              <article class="card change-card">
-                <div><span class="change-value">1</span><span class="change-unit">対1</span></div>
-                <h3><span class="phrase">寄り添う伴走</span></h3>
-                <p><span class="phrase">流行ではなく、</span><span class="phrase">あなたの人生に似合う美しさを育てます。</span></p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="trust" aria-labelledby="trust-title">
-          <div class="inner trust-layout">
-            <div class="portrait-wrap">
-              <img src="assets/hero-photo.jpg" alt="kumiによる女優メイクのイメージ">
-              <p class="portrait-caption">
-                <span class="phrase">やさしく寄り添いながら、</span>
-                <span class="phrase">あなた本来の魅力を引き出します。</span>
-              </p>
-            </div>
-            <div>
-              <p class="section-label">Profile</p>
-              <h2 class="section-title" id="trust-title">
-                <span class="phrase">講師 kumi の信頼</span>
-              </h2>
-              <article class="card trust-card">
-                <h3><span class="phrase">40代からの女優変身プロデューサー</span></h3>
-                <p>
-                  <span class="phrase">外見に自信がなかった自身の経験から、</span>
-                  <span class="phrase">メイクで心まで変わる喜びを届ける講師へ。</span>
-                  <span class="phrase">年齢を重ねた女性の魅力が上品に花開く、</span>
-                  <span class="phrase">再現性の高いメイクを伝えています。</span>
-                </p>
-                <ul class="trust-list">
-                  <li><span class="phrase">10,000人以上のメイク経験</span></li>
-                  <li><span class="phrase">TV・雑誌などメディア出演多数</span></li>
-                  <li><span class="phrase">マンツーマンで悩みと理想に寄り添う指導</span></li>
-                </ul>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="product" aria-labelledby="product-title">
-          <div class="inner">
-            <p class="section-label">Program</p>
-            <h2 class="section-title" id="product-title">
-              <span class="phrase">理想のあなたを叶える</span>
-              <span class="phrase">女優メイク講座</span>
-            </h2>
-            <div class="product-layout">
-              <article class="card product-card">
-                <h3><span class="phrase">講座で受け取れること</span></h3>
-                <ul class="product-list">
-                  <li><span class="phrase">顔立ちと理想像を合わせたメイク診断</span></li>
-                  <li><span class="phrase">肌を明るく見せるベースメイク手順</span></li>
-                  <li><span class="phrase">目元・眉・リップの印象設計レッスン</span></li>
-                  <li><span class="phrase">手持ちコスメの活用と買い足しアドバイス</span></li>
-                  <li><span class="phrase">自宅で再現できる個別メイクカルテ</span></li>
-                </ul>
-              </article>
-              <aside class="price-box" aria-label="無料カウンセリング">
-                <div class="small">まずは初回限定</div>
-                <div class="price-main">
-                  <span class="phrase">無料カウンセリング</span><br>
-                  <span class="phrase">受付中</span>
-                </div>
-                <div class="price-note">
-                  <span class="phrase">講座内容・日程・必要な道具を</span>
-                  <span class="phrase">個別にご案内します。</span>
-                </div>
-                <a class="cta" href="#apply">
-                  <span><span class="phrase">詳細を相談する</span></span>
-                  <span class="cta-arrow" aria-hidden="true">›</span>
-                </a>
-              </aside>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="faq" aria-labelledby="faq-title">
-          <div class="narrow">
-            <p class="section-label">FAQ</p>
-            <h2 class="section-title" id="faq-title">
-              <span class="phrase">不安を抱えたままでも、</span>
-              <span class="phrase">大丈夫です</span>
-            </h2>
-            <div class="faq-list">
-              <article class="card faq-item">
-                <h3><span class="phrase">メイク初心者でも参加できますか？</span></h3>
-                <p><span class="phrase">はい。</span><span class="phrase">ブラシの持ち方や色の選び方から、</span><span class="phrase">一つずつ丁寧に進めます。</span></p>
-              </article>
-              <article class="card faq-item">
-                <h3><span class="phrase">手持ちのコスメでも大丈夫ですか？</span></h3>
-                <p><span class="phrase">大丈夫です。</span><span class="phrase">今あるものを活かしながら、</span><span class="phrase">必要なものだけをご提案します。</span></p>
-              </article>
-              <article class="card faq-item">
-                <h3><span class="phrase">派手になりすぎないか心配です。</span></h3>
-                <p><span class="phrase">女優メイクは濃くすることではありません。</span><span class="phrase">品よく華やかに見えるバランスを大切にします。</span></p>
-              </article>
-              <article class="card faq-item">
-                <h3><span class="phrase">オンライン相談はできますか？</span></h3>
-                <p><span class="phrase">ご希望に合わせて相談できます。</span><span class="phrase">まずは無料カウンセリングで日程をご確認ください。</span></p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section apply" id="apply" aria-labelledby="apply-title">
-          <div class="inner apply-box">
-            <div class="apply-copy">
-              <p class="section-label">Apply</p>
-              <h2 id="apply-title">
-                <span class="phrase">一歩踏み出したいあなたへ</span><br>
-                <span class="phrase">無料カウンセリングに</span>
-                <span class="phrase">お申し込みください</span>
-              </h2>
-              <p>
-                <span class="phrase">今の悩み、なりたい印象、</span>
-                <span class="phrase">普段のメイク習慣をお聞きしながら、</span>
-                <span class="phrase">あなたに合う講座の進め方をご案内します。</span>
-              </p>
-              <p>
-                <span class="phrase">迷っている段階でも大丈夫です。</span>
-                <span class="phrase">新しい自分に出会う準備を、</span>
-                <span class="phrase">ここから始めましょう。</span>
-              </p>
-            </div>
-
-            <form class="card form-card" id="apply-form">
-              <div class="form-grid">
-                <label>
-                  お名前
-                  <input type="text" name="name" autocomplete="name" required>
-                </label>
-                <label>
-                  メールアドレス
-                  <input type="email" name="email" autocomplete="email" required>
-                </label>
-                <label>
-                  ご希望の相談方法
-                  <select name="style" required>
-                    <option value="">選択してください</option>
-                    <option>オンラインで相談したい</option>
-                    <option>対面で相談したい</option>
-                    <option>まずは内容を聞きたい</option>
-                  </select>
-                </label>
-                <label>
-                  今のお悩み
-                  <textarea name="message" placeholder="例：年齢に合うメイクが分からない、写真写りを変えたい"></textarea>
-                </label>
-                <button class="submit" type="submit">
-                  <span class="phrase">無料カウンセリングに申し込む</span>
-                </button>
-              </div>
-              <p class="form-note">
-                <span class="phrase">ご入力内容を確認し、</span>
-                <span class="phrase">担当よりご案内いたします。</span>
-              </p>
-              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-            </form>
-          </div>
-        </section>
-      </main>
-
-      <a class="fixed-cta" href="#apply">
-        <span class="phrase">無料カウンセリングへ</span>
-      </a>
-
-      <footer class="footer">
-        <p><span class="phrase">© kumi Actress Makeup Program</span></p>
-      </footer>
-    </div>
-
-    <script>
-      const form = document.querySelector("#apply-form");
-      const status = document.querySelector("#form-status");
-
-      form.addEventListener("submit", (event) => {
-        event.preventDefault();
-        status.textContent = "ありがとうございます。お申し込み内容を受け付けました。";
-      });
-    </script>
+      <section class="section application" id="application">
+        <div class="section-mark">
+          <span>Application</span>
+        </div>
+        <p class="eyebrow">申込</p>
+        <h2 class="section-title">
+          <span class="line">まずは女優メイク</span>
+          <span class="line">体験レッスンへ</span>
+        </h2>
+        <div class="copy-flow">
+          <span class="chunk">あなたが変われないのは、</span>
+          <span class="chunk">魅力がないからではありません。</span>
+          <span class="chunk">まだ、</span><span class="chunk">自分の魅力を引き出す方法を</span><span class="chunk">知らないだけ。</span>
+          <span class="chunk">次に変わるのはあなたです。</span>
+        </div>
+        <div class="limited">期間限定募集</div>
+        <p class="cta-title">女優メイク体験レッスン</p>
+        <p class="cta-lead">▼お申し込みはこちら▼</p>
+        <a class="cta-button" href="#application" aria-label="女優メイク体験レッスンに申し込む">
+          <span class="benefit">初回限定<br>特典あり</span>
+          <span class="cta-main"><span>女優メイク体験レッスンに</span><span>申し込む</span></span>
+          <span class="cta-arrow" aria-hidden="true">›</span>
+        </a>
+      </section>
+    </main>
   </body>
 </html>
