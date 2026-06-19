@@ -1,0 +1,1265 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>40代からの女優変身プロデュース</title>
+  <meta name="description" content="年齢を重ねたからこそ、もっと美しく輝ける。40代からの女優変身プロデュース無料体験LPです。">
+  <meta property="og:title" content="40代からの女優変身プロデュース">
+  <meta property="og:description" content="自分に似合うヘアメイクを知り、マイナス10歳の印象と自信を手に入れる無料体験。">
+  <meta property="og:image" content="assets/fv.jpg">
+  <style>
+    :root {
+      --ivory: #fffaf1;
+      --pearl: #f8efe2;
+      --paper: #fffdf8;
+      --navy: #06172a;
+      --navy-soft: #102b43;
+      --gold: #bd8d2e;
+      --gold-light: #e2c77f;
+      --rose: #c78c78;
+      --ink: #152033;
+      --muted: #786b5d;
+      --line: rgba(189, 141, 46, 0.32);
+      --shadow: 0 18px 50px rgba(27, 20, 11, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(226, 199, 127, 0.28), transparent 34rem),
+        linear-gradient(180deg, #f2eadf 0%, #fbf6ed 48%, #efe4d4 100%);
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, "Noto Serif JP", serif;
+      letter-spacing: 0;
+      line-height: 1.85;
+      word-break: keep-all;
+      overflow-wrap: normal;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button,
+    input,
+    select {
+      font: inherit;
+    }
+
+    .site {
+      width: min(100%, 430px);
+      margin: 0 auto;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero {
+      margin: 0;
+      background: #f7efe4;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+    }
+
+    .section {
+      position: relative;
+      padding: 56px 22px;
+      isolation: isolate;
+    }
+
+    .section::before {
+      content: "";
+      position: absolute;
+      inset: 0 22px auto;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+    }
+
+    .section:first-of-type::before {
+      display: none;
+    }
+
+    .section--pearl {
+      background:
+        linear-gradient(180deg, rgba(255, 250, 241, 0.92), rgba(246, 235, 219, 0.95)),
+        var(--pearl);
+    }
+
+    .section--white {
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 250, 241, 0.94)),
+        var(--paper);
+    }
+
+    .section--navy {
+      color: #fff8e9;
+      background:
+        linear-gradient(160deg, rgba(6, 23, 42, 0.98), rgba(16, 43, 67, 0.98)),
+        var(--navy);
+    }
+
+    .section--navy::before {
+      background: linear-gradient(90deg, transparent, rgba(226, 199, 127, 0.48), transparent);
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .section--navy .eyebrow {
+      color: var(--gold-light);
+    }
+
+    .title {
+      margin: 0 auto 26px;
+      color: var(--navy);
+      font-size: 29px;
+      font-weight: 700;
+      line-height: 1.45;
+      text-align: center;
+    }
+
+    .section--navy .title {
+      color: #fff8e9;
+    }
+
+    .title-small {
+      font-size: 25px;
+    }
+
+    .phrase,
+    .line {
+      display: inline-block;
+    }
+
+    .line {
+      display: block;
+    }
+
+    .ornament {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 0 auto 24px;
+      color: var(--gold);
+    }
+
+    .ornament::before,
+    .ornament::after {
+      content: "";
+      width: 78px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, currentColor);
+    }
+
+    .ornament::after {
+      background: linear-gradient(90deg, currentColor, transparent);
+    }
+
+    .ornament span {
+      width: 7px;
+      height: 7px;
+      border: 1px solid currentColor;
+      transform: rotate(45deg);
+      background: rgba(255, 255, 255, 0.45);
+    }
+
+    .lead {
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .section--navy .lead {
+      color: rgba(255, 248, 233, 0.82);
+    }
+
+    .future-list,
+    .worry-list,
+    .check-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .future-list {
+      margin-bottom: 30px;
+    }
+
+    .future-list li,
+    .worry-list li,
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      min-height: 44px;
+      padding: 12px 13px;
+      border: 1px solid rgba(189, 141, 46, 0.22);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.72);
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .future-list li::before,
+    .check-list li::before {
+      content: "✓";
+      flex: 0 0 22px;
+      width: 22px;
+      height: 22px;
+      margin-top: 2px;
+      border-radius: 50%;
+      color: #fff;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 22px;
+      text-align: center;
+    }
+
+    .worry-list li::before {
+      content: "";
+      flex: 0 0 18px;
+      width: 18px;
+      height: 18px;
+      margin-top: 4px;
+      border: 1.5px solid var(--gold);
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .message {
+      margin: 30px 0 0;
+      padding: 28px 18px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      color: var(--navy);
+      font-size: 18px;
+      line-height: 2;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.45);
+    }
+
+    .message strong {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .cause-copy {
+      display: grid;
+      gap: 18px;
+      margin: 0;
+      color: var(--ink);
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .quote-line {
+      margin: 0;
+      padding: 16px 14px;
+      border: 1px solid rgba(189, 141, 46, 0.28);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.78);
+      color: var(--navy);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.75;
+    }
+
+    .mini-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin: 8px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .mini-list li {
+      min-height: 52px;
+      padding: 12px 8px;
+      border: 1px solid rgba(189, 141, 46, 0.24);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.7);
+      color: var(--navy);
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .step-stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .step-card {
+      position: relative;
+      padding: 22px 17px;
+      border: 1px solid rgba(226, 199, 127, 0.45);
+      border-radius: 8px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
+        rgba(255, 255, 255, 0.04);
+    }
+
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 88px;
+      height: 28px;
+      margin-bottom: 12px;
+      border: 1px solid rgba(226, 199, 127, 0.7);
+      border-radius: 999px;
+      color: var(--navy);
+      background: var(--gold-light);
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .step-card h3 {
+      margin: 0 0 12px;
+      color: #fff8e9;
+      font-size: 22px;
+      line-height: 1.5;
+    }
+
+    .step-card p {
+      margin: 0;
+      color: rgba(255, 248, 233, 0.86);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .step-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .step-points span {
+      padding: 7px 10px;
+      border: 1px solid rgba(226, 199, 127, 0.34);
+      border-radius: 999px;
+      color: #fff8e9;
+      background: rgba(255, 255, 255, 0.06);
+      font-size: 13px;
+      line-height: 1.2;
+    }
+
+    .step-arrow {
+      color: var(--gold-light);
+      font-size: 26px;
+      line-height: 1;
+      text-align: center;
+    }
+
+    .case-grid {
+      display: grid;
+      gap: 14px;
+      margin-top: 26px;
+    }
+
+    .case-card {
+      border: 1px solid rgba(189, 141, 46, 0.32);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.76);
+      overflow: hidden;
+    }
+
+    .case-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 38px;
+      padding: 8px 12px;
+      color: #fff8e9;
+      background: linear-gradient(90deg, var(--navy), var(--navy-soft));
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .ba-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 32px minmax(0, 1fr);
+      gap: 0;
+      align-items: stretch;
+      min-height: 132px;
+    }
+
+    .photo-slot {
+      position: relative;
+      display: grid;
+      place-items: center;
+      padding: 16px 8px 12px;
+      overflow: hidden;
+      color: rgba(21, 32, 51, 0.62);
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.78), rgba(242, 229, 210, 0.82)),
+        var(--pearl);
+    }
+
+    .photo-slot::before {
+      content: "";
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      border: 1px solid rgba(189, 141, 46, 0.24);
+      background:
+        radial-gradient(circle at 50% 28%, rgba(189, 141, 46, 0.22) 0 18%, transparent 19%),
+        radial-gradient(circle at 50% 92%, rgba(189, 141, 46, 0.18) 0 45%, transparent 46%);
+    }
+
+    .photo-slot.after {
+      background:
+        linear-gradient(145deg, rgba(255, 251, 239, 0.92), rgba(226, 199, 127, 0.28)),
+        var(--ivory);
+    }
+
+    .photo-label {
+      position: absolute;
+      inset: 8px auto auto 8px;
+      padding: 3px 8px;
+      color: #fff;
+      background: var(--navy);
+      font-size: 12px;
+      line-height: 1.2;
+    }
+
+    .photo-slot.after .photo-label {
+      background: var(--gold);
+    }
+
+    .ba-arrow {
+      display: grid;
+      place-items: center;
+      color: var(--gold);
+      background: rgba(189, 141, 46, 0.08);
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .proof-copy {
+      margin: 28px 0 0;
+      color: var(--navy);
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 1.75;
+      text-align: center;
+    }
+
+    .voice-list {
+      display: grid;
+      gap: 13px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .voice-list li {
+      padding: 17px 16px;
+      border-left: 3px solid var(--gold);
+      border-radius: 0 8px 8px 0;
+      background: rgba(255, 255, 255, 0.78);
+      color: var(--navy);
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .profile {
+      display: grid;
+      gap: 20px;
+    }
+
+    .profile-box {
+      padding: 20px 17px;
+      border: 1px solid rgba(226, 199, 127, 0.42);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .profile-name {
+      margin: 0 0 12px;
+      color: var(--gold-light);
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .profile-list {
+      display: grid;
+      gap: 9px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .profile-list li {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      color: rgba(255, 248, 233, 0.9);
+      font-size: 15px;
+    }
+
+    .profile-list li::before {
+      content: "";
+      flex: 0 0 7px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gold-light);
+    }
+
+    .story {
+      margin: 0;
+      color: rgba(255, 248, 233, 0.88);
+      font-size: 15px;
+      line-height: 2;
+      text-align: left;
+    }
+
+    .program-grid {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .program-item {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      min-height: 54px;
+      padding: 13px 14px;
+      border: 1px solid rgba(189, 141, 46, 0.22);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.78);
+      font-weight: 700;
+    }
+
+    .program-item::before {
+      content: "✓";
+      flex: 0 0 24px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--navy);
+      font-size: 13px;
+      line-height: 24px;
+      text-align: center;
+    }
+
+    .benefit-box {
+      padding: 24px 17px;
+      border-radius: 8px;
+      color: #fff8e9;
+      background:
+        linear-gradient(155deg, rgba(6, 23, 42, 0.96), rgba(21, 54, 81, 0.96)),
+        var(--navy);
+    }
+
+    .benefit-box h3 {
+      margin: 0 0 16px;
+      color: var(--gold-light);
+      font-size: 21px;
+      text-align: center;
+    }
+
+    .benefit-box ul {
+      display: grid;
+      gap: 9px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .benefit-box li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: rgba(255, 248, 233, 0.9);
+      font-size: 15px;
+    }
+
+    .benefit-box li::before {
+      content: "";
+      flex: 0 0 7px;
+      width: 7px;
+      height: 7px;
+      margin-top: 11px;
+      border-radius: 50%;
+      background: var(--gold-light);
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      border: 1px solid rgba(189, 141, 46, 0.24);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.78);
+      overflow: hidden;
+    }
+
+    summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 56px;
+      padding: 14px 15px;
+      color: var(--navy);
+      cursor: pointer;
+      font-weight: 700;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::before {
+      content: "Q";
+      flex: 0 0 28px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--gold);
+      line-height: 28px;
+      text-align: center;
+    }
+
+    details p {
+      margin: 0;
+      padding: 0 16px 17px 53px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .guarantee {
+      display: grid;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .guarantee div {
+      padding: 16px 14px;
+      border: 1px solid rgba(189, 141, 46, 0.3);
+      border-radius: 8px;
+      background: rgba(255, 250, 241, 0.86);
+      color: var(--navy);
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .cta-panel {
+      padding: 28px 18px;
+      border: 1px solid rgba(226, 199, 127, 0.48);
+      border-radius: 8px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
+        rgba(255, 255, 255, 0.05);
+      text-align: center;
+    }
+
+    .final-copy {
+      margin: 0 0 24px;
+      color: rgba(255, 248, 233, 0.92);
+      font-size: 17px;
+      line-height: 2;
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      min-height: 62px;
+      padding: 15px 20px;
+      border: 1px solid rgba(226, 199, 127, 0.88);
+      border-radius: 4px;
+      color: #fff8e9;
+      background:
+        linear-gradient(180deg, #143553, #06172a);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.22);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.5;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .cta-button span {
+      display: inline-block;
+    }
+
+    .cta-button::after {
+      content: "›";
+      color: var(--gold-light);
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .form-area {
+      display: grid;
+      gap: 12px;
+      margin-top: 24px;
+      text-align: left;
+    }
+
+    .form-area label {
+      display: grid;
+      gap: 6px;
+      color: rgba(255, 248, 233, 0.88);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .form-area input,
+    .form-area select {
+      width: 100%;
+      min-height: 48px;
+      border: 1px solid rgba(226, 199, 127, 0.45);
+      border-radius: 4px;
+      padding: 10px 12px;
+      color: var(--navy);
+      background: #fffaf1;
+    }
+
+    .form-area button {
+      margin-top: 8px;
+      cursor: pointer;
+    }
+
+    .fixed-cta {
+      position: sticky;
+      bottom: 0;
+      z-index: 20;
+      display: grid;
+      place-items: center;
+      padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+      background: rgba(255, 250, 241, 0.92);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(189, 141, 46, 0.28);
+    }
+
+    .fixed-cta .cta-button {
+      min-height: 54px;
+      max-width: 390px;
+      font-size: 16px;
+    }
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      display: none;
+      place-items: center;
+      padding: 22px;
+      background: rgba(6, 23, 42, 0.62);
+    }
+
+    .modal.is-open {
+      display: grid;
+    }
+
+    .modal-box {
+      width: min(100%, 360px);
+      padding: 28px 20px;
+      border: 1px solid rgba(226, 199, 127, 0.55);
+      border-radius: 8px;
+      color: var(--navy);
+      background: var(--ivory);
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .modal-box h2 {
+      margin: 0 0 12px;
+      font-size: 24px;
+      line-height: 1.5;
+    }
+
+    .modal-box p {
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .modal-close {
+      width: 100%;
+      min-height: 48px;
+      border: 0;
+      border-radius: 4px;
+      color: #fff8e9;
+      background: var(--navy);
+      cursor: pointer;
+    }
+
+    @media (max-width: 370px) {
+      .section {
+        padding: 48px 18px;
+      }
+
+      .title {
+        font-size: 26px;
+      }
+
+      .title-small {
+        font-size: 23px;
+      }
+
+      .ba-row {
+        min-height: 118px;
+      }
+
+      .proof-copy {
+        font-size: 23px;
+      }
+    }
+
+    @media (min-width: 720px) {
+      .site {
+        margin: 30px auto;
+        border-radius: 14px;
+      }
+
+      .case-grid {
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="site">
+    <figure class="hero" aria-label="40代からの女優変身プロデュース">
+      <img src="assets/fv.jpg" alt="年齢を重ねたからこそ、もっと美しく、輝ける。40代からの女優変身プロデュース。">
+    </figure>
+
+    <section class="section section--pearl" id="future">
+      <p class="eyebrow">Ideal Future</p>
+      <h1 class="title">
+        <span class="line">鏡を見るたび、</span>
+        <span class="line">少し嬉しくなる毎日へ</span>
+      </h1>
+      <div class="ornament" aria-hidden="true"><span></span></div>
+      <ul class="future-list">
+        <li><span><span class="phrase">「最近キレイになったね」と</span><span class="phrase">言われる</span></span></li>
+        <li><span><span class="phrase">写真に写る自分が</span><span class="phrase">好きになる</span></span></li>
+        <li><span><span class="phrase">同世代から</span><span class="phrase">褒められる</span></span></li>
+        <li><span><span class="phrase">外出や旅行が</span><span class="phrase">楽しくなる</span></span></li>
+        <li><span><span class="phrase">おしゃれが</span><span class="phrase">楽しくなる</span></span></li>
+        <li><span><span class="phrase">自信を持って</span><span class="phrase">人前に立てる</span></span></li>
+        <li><span><span class="phrase">第二の人生を</span><span class="phrase">もっと楽しめる</span></span></li>
+      </ul>
+      <div class="message">
+        <span class="line">年齢を重ねることは、</span>
+        <span class="line"><strong>美しさを失うこと</strong>ではありません。</span>
+        <br>
+        <span class="line">あなた本来の魅力を</span>
+        <span class="line">引き出すことで、</span>
+        <span class="line">40代からでも</span>
+        <span class="line">女性はもっと輝けます。</span>
+      </div>
+    </section>
+
+    <section class="section section--white" id="worry">
+      <p class="eyebrow">Current Concerns</p>
+      <h2 class="title">
+        <span class="line">こんなお悩み</span>
+        <span class="line">ありませんか？</span>
+      </h2>
+      <ul class="worry-list">
+        <li><span><span class="phrase">昔のメイクが</span><span class="phrase">似合わなくなった</span></span></li>
+        <li><span><span class="phrase">シミ・シワ・たるみが</span><span class="phrase">気になる</span></span></li>
+        <li><span><span class="phrase">高い化粧品を買っても</span><span class="phrase">変わらない</span></span></li>
+        <li><span><span class="phrase">何をしても</span><span class="phrase">垢抜けない</span></span></li>
+        <li><span><span class="phrase">写真を見るたび</span><span class="phrase">落ち込む</span></span></li>
+        <li><span><span class="phrase">自信が</span><span class="phrase">なくなった</span></span></li>
+        <li><span><span class="phrase">年齢だから仕方ないと</span><span class="phrase">思っている</span></span></li>
+      </ul>
+    </section>
+
+    <section class="section section--pearl" id="reason">
+      <p class="eyebrow">True Reason</p>
+      <h2 class="title title-small">
+        <span class="line">あなたが変われないのは、</span>
+        <span class="line">年齢のせいではありません</span>
+      </h2>
+      <div class="cause-copy">
+        <p class="lead">
+          <span class="line">多くの女性は</span>
+        </p>
+        <p class="quote-line">
+          <span class="line">「もっと高い化粧品が必要」</span>
+        </p>
+        <p class="quote-line">
+          <span class="line">「もっと若作りしなきゃ」</span>
+        </p>
+        <p class="lead">
+          <span class="line">そう思いがちです。</span>
+          <span class="line">しかし本当の原因は違います。</span>
+        </p>
+        <ul class="mini-list">
+          <li>顔立ち</li>
+          <li>骨格</li>
+          <li>肌質</li>
+          <li>髪質</li>
+        </ul>
+        <p class="lead">
+          <span class="line">年齢とともに変化しているのに、</span>
+          <span class="line">20代・30代の頃と同じ</span>
+          <span class="line">メイクやヘアメイクを続けている。</span>
+          <span class="line">だから頑張っても</span>
+          <span class="line">似合わなくなるのです。</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--navy" id="method">
+      <p class="eyebrow">Original Method</p>
+      <h2 class="title">
+        <span class="line">女優変身メソッド</span>
+        <span class="line">3STEP</span>
+      </h2>
+      <div class="ornament" aria-hidden="true"><span></span></div>
+      <div class="step-stack">
+        <article class="step-card">
+          <div class="step-number">STEP 1</div>
+          <h3>
+            <span class="line">あなたの魅力を</span>
+            <span class="line">分析</span>
+          </h3>
+          <p>
+            <span class="line">顔立ち・骨格・パーツバランス・</span>
+            <span class="line">雰囲気まで丁寧に診断します。</span>
+          </p>
+          <div class="step-points">
+            <span>顔立ち</span>
+            <span>骨格</span>
+            <span>パーツバランス</span>
+            <span>雰囲気</span>
+          </div>
+        </article>
+        <div class="step-arrow" aria-hidden="true">↓</div>
+        <article class="step-card">
+          <div class="step-number">STEP 2</div>
+          <h3>
+            <span class="line">あなた専用の</span>
+            <span class="line">女優プロデュースを設計</span>
+          </h3>
+          <p>
+            <span class="line">似合うベースメイク・アイメイク・</span>
+            <span class="line">チーク・リップ・ヘアスタイル・</span>
+            <span class="line">ファッションを明確にします。</span>
+          </p>
+          <div class="step-points">
+            <span>ベースメイク</span>
+            <span>アイメイク</span>
+            <span>チーク</span>
+            <span>リップ</span>
+            <span>ヘアスタイル</span>
+            <span>ファッション</span>
+          </div>
+        </article>
+        <div class="step-arrow" aria-hidden="true">↓</div>
+        <article class="step-card">
+          <div class="step-number">STEP 3</div>
+          <h3>
+            <span class="line">印象年齢</span>
+            <span class="line">マイナス10歳へ</span>
+          </h3>
+          <p>
+            <span class="line">若作りではなく、</span>
+            <span class="line">洗練された大人の美しさを</span>
+            <span class="line">実現します。</span>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--white" id="proof">
+      <p class="eyebrow">Before / After</p>
+      <h2 class="title">
+        <span class="line">受講生がここまで</span>
+        <span class="line">変わりました</span>
+      </h2>
+      <p class="lead">
+        <span class="line">印象は、整え方で</span>
+        <span class="line">こんなにも変わります。</span>
+      </p>
+      <div class="case-grid">
+        <article class="case-card">
+          <div class="case-head"><span>Case 01</span><span>Before → After</span></div>
+          <div class="ba-row"><div class="photo-slot"><span class="photo-label">Before</span></div><div class="ba-arrow">→</div><div class="photo-slot after"><span class="photo-label">After</span></div></div>
+        </article>
+        <article class="case-card">
+          <div class="case-head"><span>Case 02</span><span>Before → After</span></div>
+          <div class="ba-row"><div class="photo-slot"><span class="photo-label">Before</span></div><div class="ba-arrow">→</div><div class="photo-slot after"><span class="photo-label">After</span></div></div>
+        </article>
+        <article class="case-card">
+          <div class="case-head"><span>Case 03</span><span>Before → After</span></div>
+          <div class="ba-row"><div class="photo-slot"><span class="photo-label">Before</span></div><div class="ba-arrow">→</div><div class="photo-slot after"><span class="photo-label">After</span></div></div>
+        </article>
+        <article class="case-card">
+          <div class="case-head"><span>Case 04</span><span>Before → After</span></div>
+          <div class="ba-row"><div class="photo-slot"><span class="photo-label">Before</span></div><div class="ba-arrow">→</div><div class="photo-slot after"><span class="photo-label">After</span></div></div>
+        </article>
+        <article class="case-card">
+          <div class="case-head"><span>Case 05</span><span>Before → After</span></div>
+          <div class="ba-row"><div class="photo-slot"><span class="photo-label">Before</span></div><div class="ba-arrow">→</div><div class="photo-slot after"><span class="photo-label">After</span></div></div>
+        </article>
+        <article class="case-card">
+          <div class="case-head"><span>Case 06</span><span>Before → After</span></div>
+          <div class="ba-row"><div class="photo-slot"><span class="photo-label">Before</span></div><div class="ba-arrow">→</div><div class="photo-slot after"><span class="photo-label">After</span></div></div>
+        </article>
+        <article class="case-card">
+          <div class="case-head"><span>Case 07</span><span>Before → After</span></div>
+          <div class="ba-row"><div class="photo-slot"><span class="photo-label">Before</span></div><div class="ba-arrow">→</div><div class="photo-slot after"><span class="photo-label">After</span></div></div>
+        </article>
+        <article class="case-card">
+          <div class="case-head"><span>Case 08</span><span>Before → After</span></div>
+          <div class="ba-row"><div class="photo-slot"><span class="photo-label">Before</span></div><div class="ba-arrow">→</div><div class="photo-slot after"><span class="photo-label">After</span></div></div>
+        </article>
+        <article class="case-card">
+          <div class="case-head"><span>Case 09</span><span>Before → After</span></div>
+          <div class="ba-row"><div class="photo-slot"><span class="photo-label">Before</span></div><div class="ba-arrow">→</div><div class="photo-slot after"><span class="photo-label">After</span></div></div>
+        </article>
+        <article class="case-card">
+          <div class="case-head"><span>Case 10</span><span>Before → After</span></div>
+          <div class="ba-row"><div class="photo-slot"><span class="photo-label">Before</span></div><div class="ba-arrow">→</div><div class="photo-slot after"><span class="photo-label">After</span></div></div>
+        </article>
+      </div>
+      <p class="proof-copy">
+        <span class="line">年齢は変わらない。</span>
+        <span class="line">でも印象は変えられる。</span>
+      </p>
+    </section>
+
+    <section class="section section--pearl" id="voices">
+      <p class="eyebrow">Life Change</p>
+      <h2 class="title">
+        <span class="line">変わったのは</span>
+        <span class="line">見た目だけではありません</span>
+      </h2>
+      <ul class="voice-list">
+        <li><span class="phrase">「久しぶりに自分に自信が持てました」</span></li>
+        <li><span class="phrase">「夫から綺麗になったと言われました」</span></li>
+        <li><span class="phrase">「旅行の写真を見返すのが楽しくなりました」</span></li>
+        <li><span class="phrase">「娘にメイクを褒められました」</span></li>
+        <li><span class="phrase">「外出する回数が増えました」</span></li>
+      </ul>
+    </section>
+
+    <section class="section section--navy" id="profile">
+      <p class="eyebrow">Profile</p>
+      <h2 class="title">
+        <span class="line">なぜ私が</span>
+        <span class="line">40代女性を変えられるのか</span>
+      </h2>
+      <div class="profile">
+        <div class="profile-box">
+          <p class="profile-name">kumi プロフィール</p>
+          <ul class="profile-list">
+            <li><span>メイク歴25年</span></li>
+            <li><span>変身実績1000人</span></li>
+            <li><span>TVなどメディア掲載</span></li>
+          </ul>
+        </div>
+        <p class="story">
+          <span class="line">若い頃の正解が、</span>
+          <span class="line">ある日ふと似合わなくなる。</span>
+          <span class="line">そんな戸惑いを抱えながらも、</span>
+          <span class="line">本当はまだ美しくいたいと願う女性を</span>
+          <span class="line">何人も見てきました。</span>
+          <br>
+          <span class="line">年齢を隠すためではなく、</span>
+          <span class="line">今の自分を好きになるために。</span>
+          <span class="line">その人だけの魅力を見つけ、</span>
+          <span class="line">女優のように光が当たる瞬間を</span>
+          <span class="line">一緒に作りたい。</span>
+          <br>
+          <span class="line">その想いから、</span>
+          <span class="line">女優変身プロデュースを始めました。</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--white" id="program">
+      <p class="eyebrow">Program</p>
+      <h2 class="title">
+        <span class="line">女優変身プロデュースとは</span>
+      </h2>
+      <div class="program-grid">
+        <div class="program-item"><span>顔分析</span></div>
+        <div class="program-item"><span>似合うメイク診断</span></div>
+        <div class="program-item"><span>ヘアスタイル提案</span></div>
+        <div class="program-item"><span>実践レッスン</span></div>
+        <div class="program-item"><span>アフターフォロー</span></div>
+        <div class="program-item"><span>個別アドバイス</span></div>
+      </div>
+      <div class="benefit-box">
+        <h3>得られること</h3>
+        <ul>
+          <li><span><span class="phrase">自分に似合う</span><span class="phrase">ヘアメイクがわかる</span></span></li>
+          <li><span><span class="phrase">若々しい印象に</span><span class="phrase">近づける</span></span></li>
+          <li><span><span class="phrase">自分らしい自信を</span><span class="phrase">持てる</span></span></li>
+          <li><span><span class="phrase">毎朝のメイクが</span><span class="phrase">楽になる</span></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--pearl" id="faq">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="title">
+        <span class="line">よくあるご質問</span>
+      </h2>
+      <div class="faq-list">
+        <details open>
+          <summary><span>メイク初心者でも大丈夫ですか？</span></summary>
+          <p>はい。普段のメイク道具や習慣を伺いながら、無理なく続けられる方法をご提案します。</p>
+        </details>
+        <details>
+          <summary><span>50代でも変われますか？</span></summary>
+          <p>もちろんです。年齢に合わせた肌づくりや色選びで、今の魅力が伝わる印象へ整えます。</p>
+        </details>
+        <details>
+          <summary><span>不器用でもできますか？</span></summary>
+          <p>大丈夫です。難しいテクニックよりも、再現しやすい手順を大切にしています。</p>
+        </details>
+        <details>
+          <summary><span>何を持参すればいいですか？</span></summary>
+          <p>普段お使いのメイク道具があればお持ちください。足りないものは当日確認できます。</p>
+        </details>
+        <details>
+          <summary><span>本当に似合うメイクがわかりますか？</span></summary>
+          <p>顔立ち・骨格・肌質・雰囲気を見ながら、あなたに似合う方向性を一緒に明確にします。</p>
+        </details>
+      </div>
+      <div class="guarantee">
+        <div>満足度保証</div>
+        <div>アフターサポート保証</div>
+      </div>
+    </section>
+
+    <section class="section section--navy" id="apply">
+      <p class="eyebrow">Free Trial</p>
+      <h2 class="title">
+        <span class="line">女優プロデュース</span>
+        <span class="line">無料体験はこちら</span>
+      </h2>
+      <div class="cta-panel">
+        <p class="final-copy">
+          <span class="line">今が一番若い日です。</span>
+          <span class="line">いつか変わりたいではなく、</span>
+          <span class="line">今日から変わりませんか？</span>
+          <br>
+          <span class="line">あなた本来の美しさを引き出す</span>
+          <span class="line">第一歩をお手伝いします。</span>
+        </p>
+        <a class="cta-button" href="#trial-form">
+          <span>女優プロデュース無料体験はこちら</span>
+        </a>
+        <form class="form-area" id="trial-form">
+          <label>
+            お名前
+            <input type="text" name="name" autocomplete="name" placeholder="例：山田 花子" required>
+          </label>
+          <label>
+            メールアドレス
+            <input type="email" name="email" autocomplete="email" placeholder="example@mail.com" required>
+          </label>
+          <label>
+            ご希望内容
+            <select name="interest" required>
+              <option value="">選択してください</option>
+              <option>無料体験を希望する</option>
+              <option>内容を相談したい</option>
+              <option>日程だけ確認したい</option>
+            </select>
+          </label>
+          <button class="cta-button" type="submit">
+            <span>無料体験に申し込む</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <div class="fixed-cta">
+      <a class="cta-button" href="#apply">
+        <span>無料体験はこちら</span>
+      </a>
+    </div>
+  </main>
+
+  <div class="modal" id="thanks-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <h2 id="modal-title">
+        <span class="line">送信内容を</span>
+        <span class="line">受け付けました</span>
+      </h2>
+      <p>
+        <span class="line">本公開時は、</span>
+        <span class="line">フォーム送信先のURLを設定してください。</span>
+      </p>
+      <button class="modal-close" type="button">閉じる</button>
+    </div>
+  </div>
+
+  <script>
+    const form = document.querySelector("#trial-form");
+    const modal = document.querySelector("#thanks-modal");
+    const closeButton = document.querySelector(".modal-close");
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      modal.classList.add("is-open");
+    });
+
+    closeButton.addEventListener("click", () => {
+      modal.classList.remove("is-open");
+    });
+
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        modal.classList.remove("is-open");
+      }
+    });
+  </script>
+</body>
+</html>
