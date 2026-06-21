@@ -160,6 +160,41 @@
       display: block;
     }
 
+    .accent {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .section--navy .accent {
+      color: var(--gold-light);
+    }
+
+    .marker {
+      padding: 0 0.08em;
+      background: linear-gradient(transparent 62%, rgba(226, 199, 127, 0.42) 0);
+      font-weight: 700;
+    }
+
+    .section--navy .marker {
+      color: #fff8e9;
+      background: linear-gradient(transparent 62%, rgba(226, 199, 127, 0.32) 0);
+    }
+
+    .underline {
+      color: var(--navy);
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: rgba(189, 141, 46, 0.62);
+      text-decoration-thickness: 0.16em;
+      text-underline-offset: 0.18em;
+      text-decoration-skip-ink: none;
+    }
+
+    .section--navy .underline {
+      color: #fff8e9;
+      text-decoration-color: var(--gold-light);
+    }
+
     .ornament {
       display: flex;
       align-items: center;
@@ -198,6 +233,52 @@
 
     .section--navy .lead {
       color: rgba(255, 248, 233, 0.82);
+    }
+
+    .section-visual {
+      margin: 0 0 28px;
+      border: 1px solid rgba(189, 141, 46, 0.28);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.48);
+      box-shadow: 0 14px 34px rgba(27, 20, 11, 0.12);
+      overflow: hidden;
+    }
+
+    .section--navy .section-visual {
+      border-color: rgba(226, 199, 127, 0.5);
+      background: rgba(255, 255, 255, 0.06);
+      box-shadow: 0 18px 34px rgba(0, 0, 0, 0.22);
+    }
+
+    .section-visual img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+    }
+
+    .section-visual--future img {
+      object-position: center 42%;
+    }
+
+    .section-visual--concerns img {
+      object-position: center 46%;
+    }
+
+    .section-visual--method img,
+    .section-visual--lesson img {
+      object-position: center 48%;
+    }
+
+    .section-visual--life img {
+      object-position: center 45%;
+    }
+
+    .section-visual--final {
+      margin-bottom: 24px;
+    }
+
+    .section-visual--final img {
+      object-position: center 43%;
     }
 
     .future-list,
@@ -312,6 +393,23 @@
       color: var(--navy);
       font-weight: 700;
       text-align: center;
+    }
+
+    .reason-illustration {
+      margin: -2px 0 4px;
+      padding: 12px;
+      border: 1px solid rgba(189, 141, 46, 0.28);
+      border-radius: 8px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(255, 250, 241, 0.82)),
+        var(--ivory);
+      box-shadow: 0 12px 28px rgba(27, 20, 11, 0.08);
+    }
+
+    .reason-illustration img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
     }
 
     .step-stack {
@@ -493,6 +591,13 @@
       color: var(--navy);
       font-size: 16px;
       line-height: 1.8;
+    }
+
+    .voice-list strong,
+    .program-item strong,
+    .benefit-box strong {
+      color: var(--gold);
+      font-weight: 700;
     }
 
     .profile {
@@ -727,42 +832,24 @@
       display: inline-block;
     }
 
+    .cta-button--stacked {
+      min-height: 76px;
+      font-size: 17px;
+    }
+
+    .cta-button--stacked span {
+      line-height: 1.45;
+    }
+
+    .cta-button .line {
+      display: block;
+    }
+
     .cta-button::after {
       content: "›";
       color: var(--gold-light);
       font-size: 28px;
       line-height: 1;
-    }
-
-    .form-area {
-      display: grid;
-      gap: 12px;
-      margin-top: 24px;
-      text-align: left;
-    }
-
-    .form-area label {
-      display: grid;
-      gap: 6px;
-      color: rgba(255, 248, 233, 0.88);
-      font-size: 13px;
-      font-weight: 700;
-    }
-
-    .form-area input,
-    .form-area select {
-      width: 100%;
-      min-height: 48px;
-      border: 1px solid rgba(226, 199, 127, 0.45);
-      border-radius: 4px;
-      padding: 10px 12px;
-      color: var(--navy);
-      background: #fffaf1;
-    }
-
-    .form-area button {
-      margin-top: 8px;
-      cursor: pointer;
     }
 
     .fixed-cta {
@@ -781,54 +868,6 @@
       min-height: 54px;
       max-width: 390px;
       font-size: 16px;
-    }
-
-    .modal {
-      position: fixed;
-      inset: 0;
-      z-index: 50;
-      display: none;
-      place-items: center;
-      padding: 22px;
-      background: rgba(6, 23, 42, 0.62);
-    }
-
-    .modal.is-open {
-      display: grid;
-    }
-
-    .modal-box {
-      width: min(100%, 360px);
-      padding: 28px 20px;
-      border: 1px solid rgba(226, 199, 127, 0.55);
-      border-radius: 8px;
-      color: var(--navy);
-      background: var(--ivory);
-      text-align: center;
-      box-shadow: var(--shadow);
-    }
-
-    .modal-box h2 {
-      margin: 0 0 12px;
-      font-size: 24px;
-      line-height: 1.5;
-    }
-
-    .modal-box p {
-      margin: 0 0 20px;
-      color: var(--muted);
-      font-size: 15px;
-      line-height: 1.8;
-    }
-
-    .modal-close {
-      width: 100%;
-      min-height: 48px;
-      border: 0;
-      border-radius: 4px;
-      color: #fff8e9;
-      background: var(--navy);
-      cursor: pointer;
     }
 
     @media (max-width: 370px) {
@@ -875,25 +914,28 @@
       <p class="eyebrow">Ideal Future</p>
       <h1 class="title">
         <span class="line">鏡を見るたび、</span>
-        <span class="line">少し嬉しくなる毎日へ</span>
+        <span class="line"><span class="marker">少し嬉しくなる毎日へ</span></span>
       </h1>
       <div class="ornament" aria-hidden="true"><span></span></div>
+      <figure class="section-visual section-visual--future">
+        <img src="assets/generated/section01-ideal-future.jpg" alt="鏡を見る自分に自信を持ち、穏やかに微笑む女性。" loading="lazy">
+      </figure>
       <ul class="future-list">
         <li><span><span class="phrase">「最近キレイになったね」と</span><span class="phrase">言われる</span></span></li>
-        <li><span><span class="phrase">写真に写る自分が</span><span class="phrase">好きになる</span></span></li>
+        <li><span><span class="phrase">写真に写る自分が</span><span class="phrase accent">好きになる</span></span></li>
         <li><span><span class="phrase">同世代から</span><span class="phrase">褒められる</span></span></li>
-        <li><span><span class="phrase">外出や旅行が</span><span class="phrase">楽しくなる</span></span></li>
+        <li><span><span class="phrase">外出や旅行が</span><span class="phrase accent">楽しくなる</span></span></li>
         <li><span><span class="phrase">おしゃれが</span><span class="phrase">楽しくなる</span></span></li>
-        <li><span><span class="phrase">自信を持って</span><span class="phrase">人前に立てる</span></span></li>
+        <li><span><span class="phrase">自信を持って</span><span class="phrase accent">人前に立てる</span></span></li>
         <li><span><span class="phrase">第二の人生を</span><span class="phrase">もっと楽しめる</span></span></li>
       </ul>
       <div class="message">
         <span class="line">年齢を重ねることは、</span>
-        <span class="line"><strong>美しさを失うこと</strong>ではありません。</span>
+        <span class="line"><strong class="underline">美しさを失うこと</strong>ではありません。</span>
         <br>
         <span class="line">あなた本来の魅力を</span>
         <span class="line">引き出すことで、</span>
-        <span class="line">40代からでも</span>
+        <span class="line"><span class="marker">40代からでも</span></span>
         <span class="line">女性はもっと輝けます。</span>
       </div>
     </section>
@@ -901,9 +943,12 @@
     <section class="section section--white" id="worry">
       <p class="eyebrow">Current Concerns</p>
       <h2 class="title">
-        <span class="line">こんなお悩み</span>
+        <span class="line"><span class="marker">こんなお悩み</span></span>
         <span class="line">ありませんか？</span>
       </h2>
+      <figure class="section-visual section-visual--concerns">
+        <img src="assets/generated/section02-concerns.jpg" alt="鏡の前で今の自分に似合うメイクを考える女性。" loading="lazy">
+      </figure>
       <ul class="worry-list">
         <li><span><span class="phrase">昔のメイクが</span><span class="phrase">似合わなくなった</span></span></li>
         <li><span><span class="phrase">シミ・シワ・たるみが</span><span class="phrase">気になる</span></span></li>
@@ -919,7 +964,7 @@
       <p class="eyebrow">True Reason</p>
       <h2 class="title title-small">
         <span class="line">あなたが変われないのは、</span>
-        <span class="line">年齢のせいではありません</span>
+        <span class="line"><span class="marker">年齢のせいではありません</span></span>
       </h2>
       <div class="cause-copy">
         <p class="lead">
@@ -933,7 +978,7 @@
         </p>
         <p class="lead">
           <span class="line">そう思いがちです。</span>
-          <span class="line">しかし本当の原因は違います。</span>
+          <span class="line">しかし<span class="underline">本当の原因</span>は違います。</span>
         </p>
         <ul class="mini-list">
           <li>顔立ち</li>
@@ -941,9 +986,12 @@
           <li>肌質</li>
           <li>髪質</li>
         </ul>
+        <figure class="reason-illustration">
+          <img src="assets/reason-elements.svg" alt="顔立ち、骨格、肌質、髪質の変化を表す線画イラスト。" loading="lazy">
+        </figure>
         <p class="lead">
           <span class="line">年齢とともに変化しているのに、</span>
-          <span class="line">20代・30代の頃と同じ</span>
+          <span class="line"><span class="marker">20代・30代の頃と同じ</span></span>
           <span class="line">メイクやヘアメイクを続けている。</span>
           <span class="line">だから頑張っても</span>
           <span class="line">似合わなくなるのです。</span>
@@ -954,10 +1002,13 @@
     <section class="section section--navy" id="method">
       <p class="eyebrow">Original Method</p>
       <h2 class="title">
-        <span class="line">女優変身メソッド</span>
+        <span class="line"><span class="accent">女優変身メソッド</span></span>
         <span class="line">3STEP</span>
       </h2>
       <div class="ornament" aria-hidden="true"><span></span></div>
+      <figure class="section-visual section-visual--method">
+        <img src="assets/generated/section04-method.jpg" alt="美容の専門家が一人ひとりに合わせて魅力を分析する様子。" loading="lazy">
+      </figure>
       <div class="step-stack">
         <article class="step-card">
           <div class="step-number">STEP 1</div>
@@ -1002,7 +1053,7 @@
           <div class="step-number">STEP 3</div>
           <h3>
             <span class="line">印象年齢</span>
-            <span class="line">マイナス10歳へ</span>
+            <span class="line"><span class="marker">マイナス10歳へ</span></span>
           </h3>
           <p>
             <span class="line">若作りではなく、</span>
@@ -1021,7 +1072,7 @@
       </h2>
       <p class="lead">
         <span class="line">印象は、整え方で</span>
-        <span class="line">こんなにも変わります。</span>
+        <span class="line"><span class="accent">こんなにも変わります。</span></span>
       </p>
       <div class="case-grid">
         <article class="case-card">
@@ -1067,7 +1118,7 @@
       </div>
       <p class="proof-copy">
         <span class="line">年齢は変わらない。</span>
-        <span class="line">でも印象は変えられる。</span>
+        <span class="line"><span class="marker">でも印象は変えられる。</span></span>
       </p>
     </section>
 
@@ -1077,12 +1128,15 @@
         <span class="line">変わったのは</span>
         <span class="line">見た目だけではありません</span>
       </h2>
+      <figure class="section-visual section-visual--life">
+        <img src="assets/generated/section06-life-change.jpg" alt="外出先で写真を楽しみながら穏やかに微笑む女性。" loading="lazy">
+      </figure>
       <ul class="voice-list">
-        <li><span class="phrase">「久しぶりに自分に自信が持てました」</span></li>
-        <li><span class="phrase">「夫から綺麗になったと言われました」</span></li>
-        <li><span class="phrase">「旅行の写真を見返すのが楽しくなりました」</span></li>
-        <li><span class="phrase">「娘にメイクを褒められました」</span></li>
-        <li><span class="phrase">「外出する回数が増えました」</span></li>
+        <li><span class="phrase">「久しぶりに自分に<strong>自信</strong>が持てました」</span></li>
+        <li><span class="phrase">「夫から<strong>綺麗になった</strong>と言われました」</span></li>
+        <li><span class="phrase">「旅行の写真を見返すのが<strong>楽しく</strong>なりました」</span></li>
+        <li><span class="phrase">「娘にメイクを<strong>褒められました</strong>」</span></li>
+        <li><span class="phrase">「<strong>外出する回数</strong>が増えました」</span></li>
       </ul>
     </section>
 
@@ -1096,9 +1150,9 @@
         <div class="profile-box">
           <p class="profile-name">kumi プロフィール</p>
           <ul class="profile-list">
-            <li><span>メイク歴25年</span></li>
-            <li><span>変身実績1000人</span></li>
-            <li><span>TVなどメディア掲載</span></li>
+            <li><span>メイク歴<span class="accent">25年</span></span></li>
+            <li><span>変身実績<span class="accent">1000人</span></span></li>
+            <li><span>TVなど<span class="accent">メディア掲載</span></span></li>
           </ul>
         </div>
         <p class="story">
@@ -1109,7 +1163,7 @@
           <span class="line">何人も見てきました。</span>
           <br>
           <span class="line">年齢を隠すためではなく、</span>
-          <span class="line">今の自分を好きになるために。</span>
+          <span class="line"><span class="marker">今の自分を好きになるために。</span></span>
           <span class="line">その人だけの魅力を見つけ、</span>
           <span class="line">女優のように光が当たる瞬間を</span>
           <span class="line">一緒に作りたい。</span>
@@ -1123,8 +1177,12 @@
     <section class="section section--white" id="program">
       <p class="eyebrow">Program</p>
       <h2 class="title">
-        <span class="line">女優変身プロデュースとは</span>
+        <span class="line"><span class="accent">女優変身</span></span>
+        <span class="line"><span class="accent">プロデュース</span>とは</span>
       </h2>
+      <figure class="section-visual section-visual--lesson">
+        <img src="assets/generated/section08-lesson.jpg" alt="実践レッスンでメイクの手順を丁寧に学ぶ様子。" loading="lazy">
+      </figure>
       <div class="program-grid">
         <div class="program-item"><span>顔分析</span></div>
         <div class="program-item"><span>似合うメイク診断</span></div>
@@ -1136,10 +1194,10 @@
       <div class="benefit-box">
         <h3>得られること</h3>
         <ul>
-          <li><span><span class="phrase">自分に似合う</span><span class="phrase">ヘアメイクがわかる</span></span></li>
-          <li><span><span class="phrase">若々しい印象に</span><span class="phrase">近づける</span></span></li>
-          <li><span><span class="phrase">自分らしい自信を</span><span class="phrase">持てる</span></span></li>
-          <li><span><span class="phrase">毎朝のメイクが</span><span class="phrase">楽になる</span></span></li>
+          <li><span><span class="phrase">自分に似合う</span><span class="phrase"><strong>ヘアメイクがわかる</strong></span></span></li>
+          <li><span><span class="phrase"><strong>若々しい印象</strong>に</span><span class="phrase">近づける</span></span></li>
+          <li><span><span class="phrase">自分らしい</span><span class="phrase"><strong>自信を持てる</strong></span></span></li>
+          <li><span><span class="phrase">毎朝のメイクが</span><span class="phrase"><strong>楽になる</strong></span></span></li>
         </ul>
       </div>
     </section>
@@ -1181,42 +1239,26 @@
       <p class="eyebrow">Free Trial</p>
       <h2 class="title">
         <span class="line">女優プロデュース</span>
-        <span class="line">無料体験はこちら</span>
+        <span class="line"><span class="marker">無料体験はこちら</span></span>
       </h2>
+      <figure class="section-visual section-visual--final">
+        <img src="assets/generated/section10-final-cta.jpg" alt="新しい一歩へ向かう自信を感じさせる女性のポートレート。" loading="lazy">
+      </figure>
       <div class="cta-panel">
         <p class="final-copy">
-          <span class="line">今が一番若い日です。</span>
+          <span class="line"><span class="marker">今が一番若い日です。</span></span>
           <span class="line">いつか変わりたいではなく、</span>
-          <span class="line">今日から変わりませんか？</span>
+          <span class="line"><span class="underline">今日から変わりませんか？</span></span>
           <br>
           <span class="line">あなた本来の美しさを引き出す</span>
           <span class="line">第一歩をお手伝いします。</span>
         </p>
-        <a class="cta-button" href="#trial-form">
-          <span>女優プロデュース無料体験はこちら</span>
+        <a class="cta-button cta-button--stacked" href="#apply">
+          <span>
+            <span class="line">女優プロデュース</span>
+            <span class="line">無料体験はこちら</span>
+          </span>
         </a>
-        <form class="form-area" id="trial-form">
-          <label>
-            お名前
-            <input type="text" name="name" autocomplete="name" placeholder="例：山田 花子" required>
-          </label>
-          <label>
-            メールアドレス
-            <input type="email" name="email" autocomplete="email" placeholder="example@mail.com" required>
-          </label>
-          <label>
-            ご希望内容
-            <select name="interest" required>
-              <option value="">選択してください</option>
-              <option>無料体験を希望する</option>
-              <option>内容を相談したい</option>
-              <option>日程だけ確認したい</option>
-            </select>
-          </label>
-          <button class="cta-button" type="submit">
-            <span>無料体験に申し込む</span>
-          </button>
-        </form>
       </div>
     </section>
 
@@ -1226,40 +1268,5 @@
       </a>
     </div>
   </main>
-
-  <div class="modal" id="thanks-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-    <div class="modal-box">
-      <h2 id="modal-title">
-        <span class="line">送信内容を</span>
-        <span class="line">受け付けました</span>
-      </h2>
-      <p>
-        <span class="line">本公開時は、</span>
-        <span class="line">フォーム送信先のURLを設定してください。</span>
-      </p>
-      <button class="modal-close" type="button">閉じる</button>
-    </div>
-  </div>
-
-  <script>
-    const form = document.querySelector("#trial-form");
-    const modal = document.querySelector("#thanks-modal");
-    const closeButton = document.querySelector(".modal-close");
-
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      modal.classList.add("is-open");
-    });
-
-    closeButton.addEventListener("click", () => {
-      modal.classList.remove("is-open");
-    });
-
-    modal.addEventListener("click", (event) => {
-      if (event.target === modal) {
-        modal.classList.remove("is-open");
-      }
-    });
-  </script>
 </body>
 </html>
