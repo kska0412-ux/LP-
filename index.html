@@ -858,6 +858,13 @@
       list-style: none;
     }
 
+    summary span {
+      min-width: 0;
+      line-height: 1.55;
+      word-break: normal;
+      overflow-wrap: break-word;
+    }
+
     summary::-webkit-details-marker {
       display: none;
     }
@@ -880,6 +887,8 @@
       color: var(--muted);
       font-size: 14px;
       line-height: 1.75;
+      word-break: normal;
+      overflow-wrap: break-word;
     }
 
     .cta-panel {
@@ -1033,6 +1042,16 @@
 
       .title-small {
         font-size: 23px;
+      }
+
+      summary {
+        gap: 8px;
+        padding: 13px 12px;
+      }
+
+      details p {
+        padding-right: 13px;
+        padding-left: 48px;
       }
 
       .ba-row {
@@ -1362,23 +1381,23 @@
       <div class="faq-list">
         <details open>
           <summary><span>メイク初心者でも大丈夫ですか？</span></summary>
-          <p>はい。普段のメイク道具や習慣を伺いながら、無理なく続けられる方法をご提案します。</p>
+          <p>はい。<br>普段のメイク道具や<br>習慣を伺いながら、<br>無理なく続けられる<br>方法をご提案します。</p>
         </details>
         <details>
           <summary><span>50代でも変われますか？</span></summary>
-          <p>もちろんです。年齢に合わせた肌づくりや色選びで、今の魅力が伝わる印象へ整えます。</p>
+          <p>もちろんです。<br>年齢に合わせた<br>肌づくりや色選びで、<br>今の魅力が伝わる<br>印象へ整えます。</p>
         </details>
         <details>
           <summary><span>不器用でもできますか？</span></summary>
-          <p>大丈夫です。難しいテクニックよりも、再現しやすい手順を大切にしています。</p>
+          <p>大丈夫です。<br>難しいテクニックよりも、<br>再現しやすい手順を<br>大切にしています。</p>
         </details>
         <details>
           <summary><span>何を持参すればいいですか？</span></summary>
-          <p>普段お使いのメイク道具があればお持ちください。足りないものは当日確認できます。</p>
+          <p>普段お使いの<br>メイク道具があれば<br>お持ちください。<br>足りないものは<br>当日確認できます。</p>
         </details>
         <details>
           <summary><span>本当に似合うメイクがわかりますか？</span></summary>
-          <p>顔立ち・骨格・肌質・雰囲気を見ながら、あなたに似合う方向性を一緒に明確にします。</p>
+          <p>顔立ち・骨格・肌質・<br>雰囲気を見ながら、<br>あなたに似合う方向性を<br>一緒に明確にします。</p>
         </details>
       </div>
     </section>
