@@ -63,7 +63,8 @@
     }
 
     .site {
-      width: min(100%, 430px);
+      width: 100%;
+      max-width: 430px;
       margin: 0 auto;
       background: var(--paper);
       box-shadow: var(--shadow);
@@ -74,11 +75,82 @@
     .hero {
       margin: 0;
       background: #f7efe4;
+      position: relative;
     }
 
     .hero img {
       width: 100%;
       height: auto;
+    }
+
+    .hero-cta-hotspot {
+      position: absolute;
+      left: 13.8%;
+      right: 13.8%;
+      bottom: 4.15%;
+      height: 6.25%;
+      border: 0;
+      border-radius: 4px;
+      background: transparent;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      transform: translateY(0);
+      transition: transform 0.16s ease, filter 0.16s ease;
+    }
+
+    .hero-cta-hotspot::before {
+      content: "";
+      position: absolute;
+      inset: 8% 1.5% 10%;
+      border-radius: 3px;
+      box-shadow:
+        0 7px 0 rgba(2, 16, 32, 0.44),
+        0 18px 26px rgba(0, 0, 0, 0.22);
+      opacity: 0.55;
+      transition: box-shadow 0.16s ease, opacity 0.16s ease, transform 0.16s ease;
+    }
+
+    .hero-cta-hotspot::after {
+      content: "";
+      position: absolute;
+      inset: 12% 3% 15%;
+      border-radius: 3px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.13), transparent 42%);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.16s ease;
+    }
+
+    .hero-cta-hotspot:hover,
+    .hero-cta-hotspot:focus-visible {
+      transform: translateY(-2px);
+      filter: brightness(1.04);
+      outline: none;
+    }
+
+    .hero-cta-hotspot:hover::before,
+    .hero-cta-hotspot:focus-visible::before {
+      box-shadow:
+        0 9px 0 rgba(2, 16, 32, 0.48),
+        0 22px 30px rgba(0, 0, 0, 0.28);
+      opacity: 0.68;
+    }
+
+    .hero-cta-hotspot:hover::after,
+    .hero-cta-hotspot:focus-visible::after {
+      opacity: 0.38;
+    }
+
+    .hero-cta-hotspot:active {
+      transform: translateY(4px);
+      filter: brightness(0.98);
+    }
+
+    .hero-cta-hotspot:active::before {
+      box-shadow:
+        0 1px 0 rgba(2, 16, 32, 0.48),
+        0 8px 16px rgba(0, 0, 0, 0.18);
+      opacity: 0.46;
     }
 
     .section {
@@ -120,6 +192,40 @@
 
     .section--navy::before {
       background: linear-gradient(90deg, transparent, rgba(226, 199, 127, 0.48), transparent);
+    }
+
+    .section--profile {
+      color: var(--navy);
+      background:
+        linear-gradient(145deg, rgba(255, 253, 248, 0.97), rgba(248, 239, 226, 0.94) 52%, rgba(241, 220, 204, 0.92)),
+        var(--ivory);
+    }
+
+    .section--profile::before {
+      background: linear-gradient(90deg, transparent, rgba(189, 141, 46, 0.4), transparent);
+    }
+
+    .section--profile::after {
+      content: "";
+      position: absolute;
+      inset: 18px 14px 18px;
+      z-index: 0;
+      border: 1px solid rgba(189, 141, 46, 0.16);
+      border-radius: 8px;
+      pointer-events: none;
+    }
+
+    .section--profile > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .section--profile .eyebrow {
+      color: var(--gold);
+    }
+
+    .section--profile .title {
+      color: var(--navy);
     }
 
     .eyebrow {
@@ -385,31 +491,31 @@
     }
 
     .mini-list li {
-      min-height: 52px;
-      padding: 12px 8px;
+      display: grid;
+      min-height: 0;
+      padding: 0;
       border: 1px solid rgba(189, 141, 46, 0.24);
       border-radius: 8px;
       background: rgba(255, 255, 255, 0.7);
       color: var(--navy);
       font-weight: 700;
       text-align: center;
+      overflow: hidden;
     }
 
-    .reason-illustration {
-      margin: -2px 0 4px;
-      padding: 12px;
-      border: 1px solid rgba(189, 141, 46, 0.28);
-      border-radius: 8px;
-      background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(255, 250, 241, 0.82)),
-        var(--ivory);
-      box-shadow: 0 12px 28px rgba(27, 20, 11, 0.08);
-    }
-
-    .reason-illustration img {
+    .mini-list img {
       width: 100%;
-      height: auto;
-      border-radius: 6px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      background: #fff;
+      border-bottom: 1px solid rgba(189, 141, 46, 0.18);
+    }
+
+    .mini-list span {
+      display: block;
+      padding: 10px 8px 12px;
+      font-size: 17px;
+      line-height: 1.35;
     }
 
     .step-stack {
@@ -455,23 +561,6 @@
       color: rgba(255, 248, 233, 0.86);
       font-size: 15px;
       line-height: 1.8;
-    }
-
-    .step-points {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 14px;
-    }
-
-    .step-points span {
-      padding: 7px 10px;
-      border: 1px solid rgba(226, 199, 127, 0.34);
-      border-radius: 999px;
-      color: #fff8e9;
-      background: rgba(255, 255, 255, 0.06);
-      font-size: 13px;
-      line-height: 1.2;
     }
 
     .step-arrow {
@@ -605,16 +694,35 @@
       gap: 20px;
     }
 
+    .profile-photo {
+      margin: 0;
+      border: 1px solid rgba(189, 141, 46, 0.34);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 18px 38px rgba(27, 20, 11, 0.13);
+      overflow: hidden;
+    }
+
+    .profile-photo img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center 28%;
+    }
+
     .profile-box {
       padding: 20px 17px;
-      border: 1px solid rgba(226, 199, 127, 0.42);
+      border: 1px solid rgba(189, 141, 46, 0.34);
       border-radius: 8px;
-      background: rgba(255, 255, 255, 0.06);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 250, 241, 0.72)),
+        rgba(255, 255, 255, 0.76);
+      box-shadow: 0 12px 28px rgba(27, 20, 11, 0.08);
     }
 
     .profile-name {
       margin: 0 0 12px;
-      color: var(--gold-light);
+      color: var(--gold);
       font-size: 24px;
       font-weight: 700;
       text-align: center;
@@ -632,7 +740,7 @@
       display: flex;
       gap: 10px;
       align-items: center;
-      color: rgba(255, 248, 233, 0.9);
+      color: var(--navy);
       font-size: 15px;
     }
 
@@ -647,7 +755,7 @@
 
     .story {
       margin: 0;
-      color: rgba(255, 248, 233, 0.88);
+      color: var(--ink);
       font-size: 15px;
       line-height: 2;
       text-align: left;
@@ -774,22 +882,6 @@
       line-height: 1.75;
     }
 
-    .guarantee {
-      display: grid;
-      gap: 10px;
-      margin-top: 24px;
-    }
-
-    .guarantee div {
-      padding: 16px 14px;
-      border: 1px solid rgba(189, 141, 46, 0.3);
-      border-radius: 8px;
-      background: rgba(255, 250, 241, 0.86);
-      color: var(--navy);
-      text-align: center;
-      font-weight: 700;
-    }
-
     .cta-panel {
       padding: 28px 18px;
       border: 1px solid rgba(226, 199, 127, 0.48);
@@ -808,6 +900,7 @@
     }
 
     .cta-button {
+      position: relative;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -815,20 +908,63 @@
       width: 100%;
       min-height: 62px;
       padding: 15px 20px;
-      border: 1px solid rgba(226, 199, 127, 0.88);
-      border-radius: 4px;
+      border: 1px solid rgba(255, 228, 157, 0.94);
+      border-radius: 7px;
       color: #fff8e9;
       background:
-        linear-gradient(180deg, #143553, #06172a);
-      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.22);
+        linear-gradient(180deg, rgba(255, 255, 255, 0.16), transparent 38%),
+        linear-gradient(180deg, #1b4366 0%, #0b2540 54%, #06172a 100%);
+      box-shadow:
+        0 5px 0 #021020,
+        0 15px 28px rgba(0, 0, 0, 0.34),
+        inset 0 1px 0 rgba(255, 255, 255, 0.22);
       font-size: 18px;
       font-weight: 700;
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.32);
+      cursor: pointer;
+      overflow: hidden;
+      transform: translateY(0);
+      transition: transform 0.16s ease, box-shadow 0.16s ease, filter 0.16s ease;
+    }
+
+    .cta-button::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(120deg, transparent 0 26%, rgba(255, 255, 255, 0.26) 42%, transparent 58% 100%);
+      transform: translateX(-120%);
+      transition: transform 0.55s ease;
+      pointer-events: none;
+    }
+
+    .cta-button:hover {
+      filter: brightness(1.06);
+      transform: translateY(-2px);
+      box-shadow:
+        0 7px 0 #021020,
+        0 18px 32px rgba(0, 0, 0, 0.38),
+        inset 0 1px 0 rgba(255, 255, 255, 0.26);
+    }
+
+    .cta-button:hover::before {
+      transform: translateX(120%);
+    }
+
+    .cta-button:active {
+      transform: translateY(4px);
+      box-shadow:
+        0 1px 0 #021020,
+        0 8px 18px rgba(0, 0, 0, 0.28),
+        inset 0 2px 8px rgba(0, 0, 0, 0.24);
     }
 
     .cta-button span {
+      position: relative;
+      z-index: 1;
       display: inline-block;
     }
 
@@ -847,27 +983,43 @@
 
     .cta-button::after {
       content: "›";
+      position: relative;
+      z-index: 1;
       color: var(--gold-light);
       font-size: 28px;
       line-height: 1;
     }
 
     .fixed-cta {
-      position: sticky;
+      position: fixed;
+      left: 50%;
       bottom: 0;
-      z-index: 20;
+      z-index: 40;
       display: grid;
       place-items: center;
+      width: 100%;
+      max-width: 430px;
       padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
       background: rgba(255, 250, 241, 0.92);
       backdrop-filter: blur(10px);
       border-top: 1px solid rgba(189, 141, 46, 0.28);
+      box-shadow: 0 -12px 30px rgba(27, 20, 11, 0.12);
+      opacity: 0;
+      pointer-events: none;
+      transform: translate(-50%, 14px);
+      transition: opacity 0.24s ease, transform 0.24s ease;
+    }
+
+    .fixed-cta.is-visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translate(-50%, 0);
     }
 
     .fixed-cta .cta-button {
-      min-height: 54px;
+      min-height: 58px;
       max-width: 390px;
-      font-size: 16px;
+      font-size: 15px;
     }
 
     @media (max-width: 370px) {
@@ -908,6 +1060,7 @@
   <main class="site">
     <figure class="hero" aria-label="40代からの女優変身プロデュース">
       <img src="assets/fv.jpg" alt="年齢を重ねたからこそ、もっと美しく、輝ける。40代からの女優変身プロデュース。">
+      <a class="hero-cta-hotspot" href="#apply" aria-label="女優プロデュース無料体験はこちら"></a>
     </figure>
 
     <section class="section section--pearl" id="future">
@@ -981,14 +1134,23 @@
           <span class="line">しかし<span class="underline">本当の原因</span>は違います。</span>
         </p>
         <ul class="mini-list">
-          <li>顔立ち</li>
-          <li>骨格</li>
-          <li>肌質</li>
-          <li>髪質</li>
+          <li>
+            <img src="assets/reason-face.jpg" alt="顔立ちをイメージさせる正面の女性イラスト。" loading="lazy">
+            <span>顔立ち</span>
+          </li>
+          <li>
+            <img src="assets/reason-structure.jpg" alt="骨格をイメージさせる全身バランスの女性イラスト。" loading="lazy">
+            <span>骨格</span>
+          </li>
+          <li>
+            <img src="assets/reason-skin.jpg" alt="肌質をイメージさせる頬に手を添えた女性イラスト。" loading="lazy">
+            <span>肌質</span>
+          </li>
+          <li>
+            <img src="assets/reason-hair.jpg" alt="髪質をイメージさせる後ろ髪の女性イラスト。" loading="lazy">
+            <span>髪質</span>
+          </li>
         </ul>
-        <figure class="reason-illustration">
-          <img src="assets/reason-elements.svg" alt="顔立ち、骨格、肌質、髪質の変化を表す線画イラスト。" loading="lazy">
-        </figure>
         <p class="lead">
           <span class="line">年齢とともに変化しているのに、</span>
           <span class="line"><span class="marker">20代・30代の頃と同じ</span></span>
@@ -1013,40 +1175,25 @@
         <article class="step-card">
           <div class="step-number">STEP 1</div>
           <h3>
-            <span class="line">あなたの魅力を</span>
-            <span class="line">分析</span>
+            <span class="line">あなたの魅力を分析</span>
           </h3>
           <p>
             <span class="line">顔立ち・骨格・パーツバランス・</span>
             <span class="line">雰囲気まで丁寧に診断します。</span>
           </p>
-          <div class="step-points">
-            <span>顔立ち</span>
-            <span>骨格</span>
-            <span>パーツバランス</span>
-            <span>雰囲気</span>
-          </div>
         </article>
         <div class="step-arrow" aria-hidden="true">↓</div>
         <article class="step-card">
           <div class="step-number">STEP 2</div>
           <h3>
             <span class="line">あなた専用の</span>
-            <span class="line">女優プロデュースを設計</span>
+            <span class="line">女優プロデュース案を設計</span>
           </h3>
           <p>
             <span class="line">似合うベースメイク・アイメイク・</span>
             <span class="line">チーク・リップ・ヘアスタイル・</span>
             <span class="line">ファッションを明確にします。</span>
           </p>
-          <div class="step-points">
-            <span>ベースメイク</span>
-            <span>アイメイク</span>
-            <span>チーク</span>
-            <span>リップ</span>
-            <span>ヘアスタイル</span>
-            <span>ファッション</span>
-          </div>
         </article>
         <div class="step-arrow" aria-hidden="true">↓</div>
         <article class="step-card">
@@ -1125,8 +1272,9 @@
     <section class="section section--pearl" id="voices">
       <p class="eyebrow">Life Change</p>
       <h2 class="title">
-        <span class="line">変わったのは</span>
-        <span class="line">見た目だけではありません</span>
+        <span class="line"><span class="accent">変わった</span>のは</span>
+        <span class="line"><span class="underline">見た目だけ</span>では</span>
+        <span class="line">ありません</span>
       </h2>
       <figure class="section-visual section-visual--life">
         <img src="assets/generated/section06-life-change.jpg" alt="外出先で写真を楽しみながら穏やかに微笑む女性。" loading="lazy">
@@ -1134,19 +1282,23 @@
       <ul class="voice-list">
         <li><span class="phrase">「久しぶりに自分に<strong>自信</strong>が持てました」</span></li>
         <li><span class="phrase">「夫から<strong>綺麗になった</strong>と言われました」</span></li>
-        <li><span class="phrase">「旅行の写真を見返すのが<strong>楽しく</strong>なりました」</span></li>
+        <li><span><span class="phrase">「旅行の写真を見返すのが</span><span class="phrase"><strong>楽しく</strong>なりました」</span></span></li>
         <li><span class="phrase">「娘にメイクを<strong>褒められました</strong>」</span></li>
         <li><span class="phrase">「<strong>外出する回数</strong>が増えました」</span></li>
       </ul>
     </section>
 
-    <section class="section section--navy" id="profile">
+    <section class="section section--profile" id="profile">
       <p class="eyebrow">Profile</p>
       <h2 class="title">
         <span class="line">なぜ私が</span>
-        <span class="line">40代女性を変えられるのか</span>
+        <span class="line">40代女性を</span>
+        <span class="line">変えられるのか</span>
       </h2>
       <div class="profile">
+        <figure class="profile-photo">
+          <img src="assets/profile-kumi.jpg" alt="kumiのプロフィール写真。" loading="lazy">
+        </figure>
         <div class="profile-box">
           <p class="profile-name">kumi プロフィール</p>
           <ul class="profile-list">
@@ -1229,10 +1381,6 @@
           <p>顔立ち・骨格・肌質・雰囲気を見ながら、あなたに似合う方向性を一緒に明確にします。</p>
         </details>
       </div>
-      <div class="guarantee">
-        <div>満足度保証</div>
-        <div>アフターサポート保証</div>
-      </div>
     </section>
 
     <section class="section section--navy" id="apply">
@@ -1264,9 +1412,25 @@
 
     <div class="fixed-cta">
       <a class="cta-button" href="#apply">
-        <span>無料体験はこちら</span>
+        <span>女優プロデュース無料体験はこちら</span>
       </a>
     </div>
   </main>
+
+  <script>
+    const hero = document.querySelector(".hero");
+    const fixedCta = document.querySelector(".fixed-cta");
+
+    const toggleFixedCta = () => {
+      if (!hero || !fixedCta) return;
+      const showAt = Math.max(60, hero.offsetTop + hero.offsetHeight - window.innerHeight + 12);
+      fixedCta.classList.toggle("is-visible", window.scrollY >= showAt);
+    };
+
+    toggleFixedCta();
+    window.addEventListener("load", toggleFixedCta);
+    window.addEventListener("scroll", toggleFixedCta, { passive: true });
+    window.addEventListener("resize", toggleFixedCta);
+  </script>
 </body>
 </html>
