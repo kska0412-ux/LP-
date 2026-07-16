@@ -23,7 +23,6 @@
       --line: rgba(189, 141, 46, 0.32);
       --shadow: 0 18px 50px rgba(27, 20, 11, 0.16);
     }
-
     * {
       box-sizing: border-box;
     }
@@ -574,6 +573,29 @@
       display: grid;
       gap: 14px;
       margin-top: 26px;
+    }
+
+    .instagram-reel {
+      width: min(100%, 520px);
+      margin: 26px auto 0;
+      padding: clamp(8px, 1.8vw, 12px);
+      border: 1px solid rgba(189, 141, 46, 0.34);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.76);
+      box-shadow: 0 18px 38px rgba(27, 20, 11, 0.12);
+    }
+
+    .instagram-reel .instagram-media {
+      min-width: 0 !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 auto !important;
+    }
+
+    .instagram-reel a {
+      color: var(--navy);
+      font-weight: 700;
+      line-height: 1.8;
     }
 
     .case-card {
@@ -1233,13 +1255,23 @@
     <section class="section section--white" id="proof">
       <p class="eyebrow">Before / After</p>
       <h2 class="title">
-        <span class="line">受講生がここまで</span>
-        <span class="line">変わりました</span>
+        <span class="line">女優プロデュースで</span>
+        <span class="line">ここまで変わりました。</span>
       </h2>
       <p class="lead">
         <span class="line">印象は、整え方で</span>
         <span class="line"><span class="accent">こんなにも変わります。</span></span>
       </p>
+      <div class="instagram-reel">
+        <blockquote
+          class="instagram-media"
+          data-instgrm-captioned
+          data-instgrm-permalink="https://www.instagram.com/reel/DasAL0Cu3KC/"
+          data-instgrm-version="14"
+        >
+          <a href="https://www.instagram.com/reel/DasAL0Cu3KC/" target="_blank" rel="noopener">Instagramのビフォーアフターリールを見る</a>
+        </blockquote>
+      </div>
       <div class="case-grid">
         <article class="case-card">
           <div class="case-head"><span>Case 01</span><span>Before → After</span></div>
@@ -1451,5 +1483,6 @@
     window.addEventListener("scroll", toggleFixedCta, { passive: true });
     window.addEventListener("resize", toggleFixedCta);
   </script>
+  <script async src="https://www.instagram.com/embed.js"></script>
 </body>
 </html>
