@@ -856,6 +856,48 @@
       background: var(--gold-light);
     }
 
+    .terms-panel {
+      display: grid;
+      gap: 12px;
+      margin-top: 28px;
+      padding: 18px;
+      border: 1px solid rgba(189, 141, 46, 0.34);
+      border-radius: 8px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(255, 250, 241, 0.76)),
+        rgba(255, 255, 255, 0.78);
+      box-shadow: 0 16px 34px rgba(27, 20, 11, 0.1);
+    }
+
+    .terms-row {
+      display: grid;
+      gap: 8px;
+      padding: 18px 14px;
+      border: 1px solid rgba(189, 141, 46, 0.2);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.68);
+      text-align: center;
+    }
+
+    .terms-label {
+      color: var(--muted);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+
+    .terms-value {
+      color: var(--navy);
+      font-size: clamp(30px, 9vw, 40px);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .terms-value .unit {
+      color: var(--gold);
+      font-size: 0.72em;
+    }
+
     .faq-list {
       display: grid;
       gap: 12px;
@@ -1360,6 +1402,23 @@
           <li><span><span class="phrase">自分らしい</span><span class="phrase"><strong>自信を持てる</strong></span></span></li>
           <li><span><span class="phrase">毎朝のメイクが</span><span class="phrase"><strong>楽になる</strong></span></span></li>
         </ul>
+      </div>
+    </section>
+
+    <section class="section section--navy" id="terms">
+      <p class="eyebrow">Support & Price</p>
+      <h2 class="title">
+        <span class="line">サポートと料金</span>
+      </h2>
+      <div class="terms-panel">
+        <div class="terms-row">
+          <span class="terms-label">サポート期間</span>
+          <span class="terms-value">3<span class="unit">ヶ月</span></span>
+        </div>
+        <div class="terms-row">
+          <span class="terms-label">料金</span>
+          <span class="terms-value">50<span class="unit">万</span></span>
+        </div>
       </div>
     </section>
 
