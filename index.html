@@ -1160,7 +1160,7 @@
   <main class="site">
     <figure class="hero" aria-label="40代からの女優変身プロデュース">
       <img src="assets/fv.jpg" alt="年齢を重ねたからこそ、もっと美しく、輝ける。40代からの女優変身プロデュース。">
-      <a class="hero-cta-hotspot" href="#apply" aria-label="女優プロデュース無料体験はこちら"></a>
+      <a class="hero-cta-hotspot" href="https://lin.ee/oU8yzHB" aria-label="LINEで女優プロデュース無料体験に申し込む"></a>
     </figure>
 
     <section class="section section--white" id="worry">
@@ -1487,7 +1487,7 @@
           <span class="line">あなた本来の美しさを引き出す</span>
           <span class="line">第一歩をお手伝いします。</span>
         </p>
-        <a class="cta-button cta-button--stacked" href="#apply">
+        <a class="cta-button cta-button--stacked" href="https://lin.ee/oU8yzHB">
           <span>
             <span class="line">女優プロデュース</span>
             <span class="line">無料体験はこちら</span>
@@ -1497,7 +1497,7 @@
     </section>
 
     <div class="fixed-cta">
-      <a class="cta-button" href="#apply">
+      <a class="cta-button" href="https://lin.ee/oU8yzHB">
         <span>女優プロデュース無料体験はこちら</span>
       </a>
     </div>
@@ -1519,5 +1519,18 @@
     window.addEventListener("resize", toggleFixedCta);
   </script>
   <script async src="https://www.instagram.com/embed.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('a[href*="line.me"], a[href*="lin.ee"]').forEach((link) => {
+        link.addEventListener("click", () => {
+          if (typeof fbq === "function") {
+            fbq("track", "Lead", {
+              content_name: "JOYU_PRODUCE_LINE_CTA"
+            });
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
