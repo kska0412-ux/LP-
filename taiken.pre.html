@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>無料体験のご案内｜40代からの女優プロデュース</title>
+  <style>
+    :root {
+      --ivory: #fffaf1;
+      --pearl: #f8efe2;
+      --paper: #fffdf8;
+      --navy: #06172a;
+      --navy-soft: #102b43;
+      --gold: #bd8d2e;
+      --gold-light: #e2c77f;
+      --rose: #c78c78;
+      --ink: #152033;
+      --muted: #786b5d;
+      --line: rgba(189, 141, 46, 0.32);
+      --shadow: 0 18px 50px rgba(27, 20, 11, 0.16);
+      --kumi: url("__KUMI_B64__");
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(226, 199, 127, 0.28), transparent 34rem),
+        linear-gradient(180deg, #f2eadf 0%, #fbf6ed 48%, #efe4d4 100%);
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, "Noto Serif JP", serif;
+      line-height: 1.95;
+      word-break: keep-all;
+      overflow-wrap: normal;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+
+    .site {
+      width: 100%;
+      max-width: 430px;
+      margin: 0 auto;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+    @media (min-width: 720px) {
+      .site { margin: 30px auto; border-radius: 14px; }
+    }
+
+    .section { position: relative; padding: 46px 22px; isolation: isolate; }
+    .section::before {
+      content: "";
+      position: absolute;
+      inset: 0 22px auto;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+    }
+    .section:first-of-type::before { display: none; }
+    .section--white {
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 250, 241, 0.94)),
+        var(--paper);
+    }
+    .section--pearl {
+      background:
+        linear-gradient(180deg, rgba(255, 250, 241, 0.92), rgba(246, 235, 219, 0.95)),
+        var(--pearl);
+    }
+    .section--navy {
+      color: #fff8e9;
+      background:
+        linear-gradient(160deg, rgba(6, 23, 42, 0.98), rgba(16, 43, 67, 0.98)),
+        var(--navy);
+    }
+    .section--navy::before {
+      background: linear-gradient(90deg, transparent, rgba(226, 199, 127, 0.48), transparent);
+    }
+    .section--profile {
+      color: var(--navy);
+      background:
+        linear-gradient(145deg, rgba(255, 253, 248, 0.97), rgba(248, 239, 226, 0.94) 52%, rgba(241, 220, 204, 0.92)),
+        var(--ivory);
+    }
+    .section--profile::after {
+      content: "";
+      position: absolute;
+      inset: 18px 14px 18px;
+      z-index: 0;
+      border: 1px solid rgba(189, 141, 46, 0.16);
+      border-radius: 8px;
+      pointer-events: none;
+    }
+    .section--profile > * { position: relative; z-index: 1; }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .section--navy .eyebrow { color: var(--gold-light); }
+    .title {
+      margin: 0 auto 22px;
+      color: var(--navy);
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.5;
+      text-align: center;
+    }
+    .section--navy .title { color: #fff8e9; }
+    .line { display: block; }
+    .phrase { display: inline-block; }
+    .accent { color: var(--gold); font-weight: 700; }
+    .section--navy .accent { color: var(--gold-light); }
+    .marker {
+      padding: 0 0.08em;
+      background: linear-gradient(transparent 62%, rgba(226, 199, 127, 0.42) 0);
+      font-weight: 700;
+    }
+    .ornament {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 0 auto 22px;
+      color: var(--gold);
+    }
+    .ornament::before,
+    .ornament::after {
+      content: "";
+      width: 78px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, currentColor);
+    }
+    .ornament::after { background: linear-gradient(90deg, currentColor, transparent); }
+    .ornament span {
+      width: 7px;
+      height: 7px;
+      border: 1px solid currentColor;
+      transform: rotate(45deg);
+      background: rgba(255, 255, 255, 0.45);
+    }
+    .section--navy .ornament { color: var(--gold-light); }
+    .lead {
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 15px;
+      text-align: center;
+    }
+
+    /* 注意書き */
+    .notice {
+      margin: 0;
+      padding: 16px 16px;
+      border: 1px solid rgba(189, 141, 46, 0.5);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.78);
+      color: var(--navy);
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 2;
+      text-align: center;
+    }
+
+    /* カウントダウン */
+    .limit { margin: 26px 0 0; text-align: center; }
+    .limit p {
+      margin: 0 0 12px;
+      color: var(--ink);
+      font-size: 14px;
+    }
+    .timer { display: flex; justify-content: center; gap: 8px; }
+    .timer b {
+      display: block;
+      min-width: 66px;
+      padding: 11px 6px 8px;
+      border: 1px solid rgba(226, 199, 127, 0.55);
+      border-radius: 6px;
+      color: var(--gold-light);
+      background:
+        linear-gradient(160deg, rgba(6, 23, 42, 0.98), rgba(16, 43, 67, 0.98)),
+        var(--navy);
+      font-size: 26px;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      line-height: 1.1;
+    }
+    .timer b small {
+      display: block;
+      margin-top: 4px;
+      color: rgba(255, 248, 233, 0.6);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+    }
+
+    /* 動画 */
+    .video {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      margin: 0 -22px;
+      background: #020d19;
+      overflow: hidden;
+    }
+    .video iframe,
+    .video video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+      background: #020d19;
+    }
+    .video-wait {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+    }
+    .video-wait i {
+      display: block;
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 12px;
+      border: 1px solid rgba(226, 199, 127, 0.8);
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 50% 50%, rgba(226, 199, 127, 0.24) 0 30%, transparent 31%);
+    }
+    .video-wait p {
+      margin: 0;
+      color: rgba(255, 248, 233, 0.66);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.32em;
+      text-align: center;
+    }
+
+    /* チェックリスト */
+    .check-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      min-height: 44px;
+      padding: 12px 13px;
+      border: 1px solid rgba(189, 141, 46, 0.22);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.72);
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .check-list li::before {
+      content: "✓";
+      flex: 0 0 22px;
+      width: 22px;
+      height: 22px;
+      margin-top: 2px;
+      border-radius: 50%;
+      color: #fff;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 22px;
+      text-align: center;
+    }
+    .small-note {
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.9;
+    }
+
+    /* CTA（本LPと同じ紺の3Dボタン＋自動シャイン） */
+    .cta-wrap { margin: 26px 0 0; text-align: center; }
+    .cta-button {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      min-height: 62px;
+      padding: 15px 20px;
+      border: 1px solid rgba(255, 228, 157, 0.94);
+      border-radius: 7px;
+      color: #fff8e9;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.16), transparent 38%),
+        linear-gradient(180deg, #1b4366 0%, #0b2540 54%, #06172a 100%);
+      box-shadow:
+        0 5px 0 #021020,
+        0 15px 28px rgba(0, 0, 0, 0.34),
+        inset 0 1px 0 rgba(255, 255, 255, 0.22);
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.5;
+      text-align: center;
+      text-decoration: none;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.32);
+      overflow: hidden;
+      transform: translateY(0);
+      transition: transform 0.16s ease, box-shadow 0.16s ease, filter 0.16s ease;
+    }
+    .cta-button::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(120deg, transparent 0 26%, rgba(255, 255, 255, 0.26) 42%, transparent 58% 100%);
+      transform: translateX(-120%);
+      animation: cta-shine 3.6s ease-in-out infinite;
+      pointer-events: none;
+    }
+    @keyframes cta-shine {
+      0% { transform: translateX(-120%); }
+      46% { transform: translateX(120%); }
+      100% { transform: translateX(120%); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .cta-button::before { animation: none; }
+    }
+    .cta-button:hover {
+      filter: brightness(1.06);
+      transform: translateY(-2px);
+      box-shadow:
+        0 7px 0 #021020,
+        0 18px 32px rgba(0, 0, 0, 0.38),
+        inset 0 1px 0 rgba(255, 255, 255, 0.26);
+    }
+    .cta-button:active {
+      transform: translateY(4px);
+      box-shadow:
+        0 1px 0 #021020,
+        0 8px 18px rgba(0, 0, 0, 0.28),
+        inset 0 2px 8px rgba(0, 0, 0, 0.24);
+    }
+    .cta-button span { position: relative; z-index: 1; display: inline-block; }
+    .cta-button::after {
+      content: "›";
+      position: relative;
+      z-index: 1;
+      color: var(--gold-light);
+      font-size: 28px;
+      line-height: 1;
+    }
+    .cta-note {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 11.5px;
+      text-align: center;
+    }
+    .section--navy .cta-note { color: rgba(255, 248, 233, 0.66); }
+
+    /* Message */
+    .msg-photo {
+      width: min(78%, 300px);
+      margin: 0 auto 22px;
+      aspect-ratio: 4 / 5;
+      border: 1px solid rgba(189, 141, 46, 0.34);
+      border-radius: 8px;
+      background: var(--kumi) center 20% / cover no-repeat;
+      box-shadow: 0 18px 38px rgba(27, 20, 11, 0.13);
+    }
+    .msg p {
+      margin: 0 0 1.4em;
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 2.05;
+    }
+    .msg p:last-of-type { margin-bottom: 0; }
+    .sign { margin-top: 22px; text-align: right; }
+    .sign span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+    }
+    .sign b {
+      color: var(--navy);
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+    }
+
+    .ft {
+      padding: 26px 22px 34px;
+      color: rgba(255, 248, 233, 0.55);
+      background:
+        linear-gradient(160deg, rgba(6, 23, 42, 0.98), rgba(16, 43, 67, 0.98)),
+        var(--navy);
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-align: center;
+    }
+
+    @media (max-width: 370px) {
+      .section { padding: 40px 18px; }
+      .title { font-size: 24px; }
+      .video { margin: 0 -18px; }
+    }
+  </style>
+  <!-- Meta Pixel Code（本LPと同一ID） -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1039091312286827');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1039091312286827&amp;ev=PageView&amp;noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+<body>
+  <main class="site">
+
+    <!-- ① 導入 -->
+    <section class="section section--white">
+      <p class="notice">
+        <span class="phrase">※このページは</span><span class="phrase">一度だけしか</span><span class="phrase">表示しませんので、</span><span class="phrase">注意深く</span><span class="phrase">文章と動画の内容を</span><span class="phrase">ご覧ください。</span>
+        <span class="line"><span class="phrase">非常に重要な内容と</span><span class="phrase">なっております。</span></span>
+      </p>
+      <div class="limit">
+        <p><span class="phrase">無料体験の受付枠には</span><span class="phrase">限りがあります。</span><span class="phrase">申し込み終了まで——</span></p>
+        <div class="timer" aria-hidden="true">
+          <b><span id="t-d">-</span><small>DAYS</small></b>
+          <b><span id="t-h">--</span><small>HOURS</small></b>
+          <b><span id="t-m">--</span><small>MIN</small></b>
+          <b><span id="t-s">--</span><small>SEC</small></b>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② 特別動画 -->
+    <section class="section section--navy">
+      <p class="eyebrow">Special Movie</p>
+      <h2 class="title">
+        <span class="line">LINE登録者限定</span>
+        <span class="line"><span class="marker">特別動画</span></span>
+      </h2>
+      <div class="ornament" aria-hidden="true"><span></span></div>
+      <div class="video" id="lecture-video">
+        <iframe src="https://www.youtube-nocookie.com/embed/tE81Eb-1U3g?rel=0&amp;playsinline=1"
+          title="LINE登録者限定 特別動画"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen referrerpolicy="strict-origin-when-cross-origin" loading="lazy"></iframe>
+      </div>
+      <div class="cta-wrap">
+        <a class="cta-button" href="https://lin.ee/yvGAvV9">
+          <span>
+            <span class="line"><span class="phrase">女優プロデュース</span>　<span class="phrase">無料体験はこちら</span></span>
+          </span>
+        </a>
+        <p class="cta-note">※ボタンを押すと、LINEの申し込み画面が開きます。</p>
+      </div>
+    </section>
+
+    <!-- ③ 無料体験の案内 -->
+    <section class="section section--pearl">
+      <p class="eyebrow">Free Trial</p>
+      <h2 class="title">
+        <span class="line">女優プロデュース</span>
+        <span class="line"><span class="marker">「無料体験」</span>を</span>
+        <span class="line">開催します</span>
+      </h2>
+      <p class="lead">
+        <span class="line"><span class="phrase">メイク歴25年・</span><span class="phrase">変身実績1000人の</span><span class="phrase">講師kumiが、</span></span>
+        <span class="line"><span class="phrase">あなたのお悩みに</span><span class="phrase">合わせて、</span><span class="phrase">似合う美しさの</span><span class="phrase">見つけ方を</span></span>
+        <span class="line"><span class="phrase">直接お伝えします。</span></span>
+      </p>
+      <div style="height:20px"></div>
+      <ul class="check-list">
+        <li><span><span class="phrase">今のお悩み</span><span class="phrase">（メイク・髪型・</span><span class="phrase">ファッション）の</span><span class="phrase">整理</span></span></li>
+        <li><span><span class="phrase">顔立ち・骨格・</span><span class="phrase">肌質・髪質から見る</span><span class="phrase">「似合う」の診断</span></span></li>
+        <li><span><span class="phrase">女優変身メソッド</span><span class="phrase">3STEPの体験</span></span></li>
+        <li><span><span class="phrase">印象年齢</span><span class="phrase">マイナス10歳への</span><span class="phrase">具体的な道筋</span></span></li>
+      </ul>
+      <p class="small-note">※日程はご都合に合わせて調整いたします。<br>※無理な勧誘は一切ありませんので、安心してご参加ください。</p>
+      <div class="cta-wrap">
+        <a class="cta-button" href="https://lin.ee/yvGAvV9">
+          <span>
+            <span class="line"><span class="phrase">女優プロデュース</span>　<span class="phrase">無料体験はこちら</span></span>
+          </span>
+        </a>
+        <p class="cta-note">※ボタンを押すと、LINEの申し込み画面が開きます。</p>
+      </div>
+    </section>
+
+    <!-- ④ Message -->
+    <section class="section section--profile msg">
+      <p class="eyebrow">Message</p>
+      <figure class="msg-photo" role="img" aria-label="女優プロデュース 講師 kumi"></figure>
+      <p>
+        <span class="phrase">はじめまして。</span><span class="phrase">女優プロデュースの</span><span class="phrase">kumiです。</span><br>
+        <span class="phrase">数ある発信の中から</span><span class="phrase">友だち追加いただき、</span><span class="phrase">本当に</span><span class="phrase">ありがとうございます。</span>
+      </p>
+      <p>
+        <span class="phrase">私はこの25年間、</span><span class="phrase">メイクの現場で</span><span class="phrase">1000人を超える</span><span class="phrase">女性の「変身」に</span><span class="phrase">立ち会ってきました。</span><span class="phrase">「昔のメイクが</span><span class="phrase">似合わなくなった」</span><span class="phrase">「何をしても</span><span class="phrase">垢抜けない」——</span><span class="phrase">その本当の原因は、</span><span class="phrase">年齢ではなく、</span><span class="phrase">顔立ち・骨格・</span><span class="phrase">肌質・髪質の</span><span class="phrase">変化に</span><span class="phrase">合わせられていない</span><span class="phrase">ことにあります。</span>
+      </p>
+      <p>
+        <span class="phrase">あなたが</span><span class="phrase">変われないのは、</span><span class="phrase">年齢のせいでは</span><span class="phrase">ありません。</span><span class="phrase">年齢を</span><span class="phrase">重ねたからこそ、</span><span class="phrase">もっと美しく、</span><span class="phrase">輝ける。</span><span class="phrase">動画では、</span><span class="phrase">その理由と方法を</span><span class="phrase">お話ししています。</span>
+      </p>
+      <p>
+        <span class="phrase">無料体験は、</span><span class="phrase">売り込みの場では</span><span class="phrase">ありません。</span><span class="phrase">あなたのお悩みを</span><span class="phrase">伺い、</span><span class="phrase">似合う</span><span class="phrase">「変身の方向性」を</span><span class="phrase">一緒に見つける</span><span class="phrase">時間です。</span><br>
+        <span class="phrase">「今日から</span><span class="phrase">変わりたい」——</span><span class="phrase">そう思った</span><span class="phrase">あなたと</span><span class="phrase">お話しできることを、</span><span class="phrase">楽しみに</span><span class="phrase">しています。</span>
+      </p>
+      <div class="sign"><span>女優プロデュース</span><b>kumi</b></div>
+      <div class="cta-wrap">
+        <a class="cta-button" href="https://lin.ee/yvGAvV9">
+          <span>
+            <span class="line"><span class="phrase">女優プロデュース</span>　<span class="phrase">無料体験はこちら</span></span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="ft">&copy; 女優プロデュース</footer>
+  </main>
+
+  <script>
+    /* 申し込みクリックをMetaピクセルのLeadとして送信 */
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest('a[href*="line.me"],a[href*="lin.ee"]');
+      if (a && typeof fbq === "function") {
+        fbq("track", "Lead", { content_name: "JOYU_PRODUCE_TAIKEN_CTA" });
+      }
+    }, true);
+
+    /* 72時間（残り3日）のカウントダウン。訪問者ごと、期限切れで再セット */
+    (function () {
+      var KEY = "joyu_taiken_deadline_v1", span = 72 * 60 * 60 * 1000, dl;
+      try { dl = parseInt(localStorage.getItem(KEY), 10); } catch (e) {}
+      if (!dl || isNaN(dl) || dl < Date.now()) {
+        dl = Date.now() + span;
+        try { localStorage.setItem(KEY, String(dl)); } catch (e) {}
+      }
+      var d = document.getElementById("t-d"), h = document.getElementById("t-h"),
+          m = document.getElementById("t-m"), s = document.getElementById("t-s");
+      function pad(n) { return (n < 10 ? "0" : "") + n; }
+      function tick() {
+        var r = Math.max(0, dl - Date.now());
+        d.textContent = Math.floor(r / 86400000);
+        h.textContent = pad(Math.floor(r % 86400000 / 3600000));
+        m.textContent = pad(Math.floor(r % 3600000 / 60000));
+        s.textContent = pad(Math.floor(r % 60000 / 1000));
+      }
+      tick(); setInterval(tick, 1000);
+    })();
+  </script>
+</body>
+</html>
