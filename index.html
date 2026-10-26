@@ -1526,12 +1526,20 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll('a[href*="line.me"], a[href*="lin.ee"]').forEach((link) => {
-        link.addEventListener("click", () => {
-          if (typeof fbq === "function") {
-            fbq("track", "Lead", {
-              content_name: "JOYU_PRODUCE_LINE_CTA"
-            });
-          }
+        link.addEventListener("click", (e) => {
+          if (typeof fbq !== "function") return;
+
+          // 同じ人の2回目以降のクリックは送らない
+          let sent = false;
+          try { sent = localStorage.getItem("joyu_lead_sent") === "1"; } catch (_) {}
+          if (sent) return;
+          try { localStorage.setItem("joyu_lead_sent", "1"); } catch (_) {}
+
+          // 送信してから少し待ってLINEへ移動(取りこぼし防止)
+          e.preventDefault();
+          fbq("track", "Lead", { content_name: "JOYU_PRODUCE_LINE_CTA" });
+          const href = link.href;
+          setTimeout(() => { window.location.href = href; }, 300);
         });
       });
     });
